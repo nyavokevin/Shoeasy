@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>SHOEASY | Course Trail &amp; Montagne</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","on-primary-fixed-variant":"#003fa4","on-surface":"#131b2e","on-tertiary-fixed":"#261a00","on-tertiary-fixed-variant":"#5c4300","outline":"#727687","primary-container":"#f04323","on-background":"#131b2e","tertiary-fixed":"#ffdf9f","tertiary-container":"#916c00","primary-fixed-dim":"#b3c5ff","primary-fixed":"#dae1ff","on-primary-container":"#f8f7ff","on-tertiary":"#ffffff","on-error-container":"#93000a","on-secondary-fixed-variant":"#822700","surface-dim":"#e6e8eb","error-container":"#ffdad6","surface-container-low":"#f4f5f7","secondary-container":"#f04323","inverse-on-surface":"#eef0ff","on-primary-fixed":"#001849","background":"#ffffff","on-secondary-container":"#fffbff","surface-container-high":"#e6e8eb","tertiary":"#735500","on-primary":"#ffffff","on-secondary-fixed":"#390c00","tertiary-fixed-dim":"#f9bd22","surface-bright":"#ffffff","inverse-primary":"#b3c5ff","secondary":"#0c0d0e","surface-container-lowest":"#ffffff","outline-variant":"#c2c6d8","inverse-surface":"#283044","on-secondary":"#ffffff","surface":"#ffffff","on-error":"#ffffff","on-tertiary-container":"#fff7ee","secondary-fixed-dim":"#ffb59c","on-surface-variant":"#424656","primary":"#0c0d0e","surface-tint":"#0054d6","surface-container-highest":"#e6e8eb","secondary-fixed":"#ffdbcf","surface-variant":"#e6e8eb","surface-container":"#f4f5f7"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"1rem","space-md":"1rem","margin":"3rem","space-xl":"2.5rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg-mobile":["Helvetica Neue"],"headline-sm":["Helvetica Neue"],"display-xl-mobile":["Helvetica Neue"],"headline-md":["Helvetica Neue"],"headline-md-mobile":["Helvetica Neue"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Helvetica Neue"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-technical":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-xl":["Helvetica Neue"]},"fontSize":{"headline-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"700"}],"display-xl-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["32px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"700"}],"headline-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-technical":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"500"}],"display-xl":["72px",{"lineHeight":"76px","letterSpacing":"-0.03em","fontWeight":"800"}]}}}}</script>
+<style id="shoeasy-brand">
+  ::selection{background:#f04323;color:#fff}
+  h1,h2,h3,.font-brand-heading{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif!important;font-weight:800!important;text-transform:uppercase;letter-spacing:-0.015em!important}
+  h1{line-height:.95!important} h2{line-height:1!important}
+  .line-mask{display:block;overflow:hidden;padding-bottom:.08em}.line-mask>.ln{display:block;will-change:transform}
+  #cart-count{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#f04323;color:#fff;font-size:11px;font-weight:800;margin-left:6px}
+  .shoeasy-toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:#0c0d0e;color:#fff;padding:12px 18px;border-radius:999px;font-size:13px;font-weight:700;opacity:0;transition:.3s;z-index:9999}
+  .shoeasy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .shoeasy-topbar{position:sticky;top:0;z-index:50;background:#0c0d0e;color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em}
+  .shoeasy-topbar a{color:#fff;text-decoration:none}.shoeasy-topbar a:hover{color:#f04323}
+</style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-xs" data-path="women" href="index.html"><span class="font-headline-md text-headline-md tracking-tighter text-on-surface uppercase select-none">SHOEASY</span><span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1"></span></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-on-surface font-bold"><a aria-current="page" class="uppercase tracking-wider transition-colors py-space-xs text-on-surface font-bold" data-path="women" href="femme.html">FEMME</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="men" href="homme.html">HOMME</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="kids" href="enfants.html">ENFANTS</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="best-deals" href="offres.html">MEILLEURES OFFRES</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="faq" href="aide.html">AIDE</a></nav></div><div class="flex items-center gap-space-md"><button aria-label="Rechercher des chaussures" class="p-space-xs text-on-surface hover:text-primary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[24px]">search</span></button><button aria-label="Favorites" class="p-space-xs text-on-surface hover:text-secondary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[24px]">favorite</span></button><a aria-label="Panier" class="p-space-xs text-on-surface hover:text-primary transition-colors relative flex items-center justify-center" data-path="cart" href="panier.html"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container font-label-technical text-label-technical rounded-full h-5 min-w-[20px] px-1 flex items-center justify-center leading-none font-bold">2</span></a><span id="cart-count">0</span><div class="ml-space-xs pl-space-xs flex items-center"><img alt="Profil" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XGse2ij7B7jR0PNG0vkyR1uLaUWmn5jJKzneg2_x56d14OxeiFiHjLy5pmCU9JFyjFfuL8X2vLVUsr0r2Gy9JLRKNuioxQ-n69WRDP7wJbgGniX-veoF7jiPzeck_prllw_ney_oj_ixHiJO8d7EVZfpG7eUTrs4DijRQWXSmXExovZ8Yo0C-akZT-3vFWbt7orKCMLAt5XkQbm8vR-Ctj0zDva0mgctaB9ODzA7wl_NjBkGvpPCwp5ODYe5HpddtdYSgixqhX"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Technical Marquee Strip -->
+<section class="w-full bg-inverse-surface text-inverse-on-surface py-2 px-margin-mobile lg:px-margin overflow-hidden">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between font-label-technical text-label-technical uppercase tracking-widest text-outline-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1.5 text-secondary-fixed">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          MATRICE DE COURSE OFFICIELLE 2026
+        </span>
+<span class="hidden md:inline text-outline">•</span>
+<span class="hidden md:inline">TESTÉ À CHAMONIX // ALT. +2 480M</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="hidden sm:inline">ÉQUIPÉ VIBRAM® MEGAGRIP</span>
+<span>LIVRAISON EXPRESS OFFERTE DÈS 120 €</span>
+</div>
+</div>
+</section>
+<!-- Editorial Showcase & Feature Lockup -->
+<section class="w-full px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Floating Shoe Interactive Feature Canvas -->
+<div class="lg:col-span-8 bg-surface-container rounded-xl p-space-lg lg:p-space-xl relative overflow-hidden flex flex-col justify-between min-h-[500px] shadow-sm">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-72 h-72 rounded-full bg-secondary-container/10 blur-2xl pointer-events-none"></div>
+<!-- Top Meta Row -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="bg-secondary text-on-secondary font-label-technical text-label-technical px-3 py-1 rounded-full uppercase tracking-wider">SOMMET DU LABO</span>
+<span class="bg-surface text-on-surface font-label-technical text-label-technical px-3 py-1 rounded-full uppercase">ÉDITION FEMME</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9 / 5</span>
+<span class="text-on-surface-variant font-normal">(1 840 essais alpins)</span>
+</div>
+</div>
+<!-- Center Stage Product Visualizer with Technical Tags -->
+<div class="relative z-10 my-auto py-space-md flex flex-col items-center justify-center">
+<!-- Tech Hotspot 1 -->
+<div class="hidden sm:flex items-center gap-2 self-start ml-8 mb-2 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-technical text-label-technical text-on-surface uppercase">Amorti PROFLY™+ double densité</span>
+</div>
+<!-- Shoe Center Image -->
+<div class="relative w-full max-w-[560px] aspect-[16/10] flex items-center justify-center group cursor-pointer">
+<img class="w-full h-full object-contain filter drop-shadow-2xl transition-transform duration-500 ease-out group-hover:scale-105 group-hover:-rotate-2" data-alt="Technical side profile cut of high-performance women's Hoka trail running shoe in electric coral, neon citrus, and slate cyan with sculpted lugged outsole, floating against crisp white background with natural drop shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVymsq4swPsAofKHBdEH7ef-I2bEzlwm003z8nZKTttVmklBGWyOODYAwvIiACEvNz8F_937evzKUrSI51_uULv2n6KAvn3q-7qguYQtNosswFSsq0RhhYsYjiVUNR-ZSh-V7-0ufgirxhtBZc0BBx5OupWbuKIdlGBGZ5yenuWE5lTL-a1ScZazoLzG5s0W6qO1Ow1Wxlfj_dHcO85931FoE7Lf5Upl7mifBSgkYVIbdTytC5fdcA"/>
+</div>
+<!-- Tech Hotspot 2 -->
+<div class="hidden sm:flex items-center gap-2 self-end mr-10 -mt-2 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-technical text-label-technical text-on-surface uppercase">Crampons Vibram® 5,0 mm</span>
+</div>
+</div>
+<!-- Bottom Summary Bar -->
+<div class="relative z-10 pt-space-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface uppercase">MAFATE SPEED 4 // UTMB RACER</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conçue pour les descentes techniques et l’endurance montagne 100 miles.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">€180.00</span>
+<button class="bg-on-surface text-surface hover:bg-primary-container hover:text-on-primary-container transition-all font-label-lg text-label-lg uppercase px-6 py-3 rounded-full flex items-center gap-2 shadow-sm">
+<span>Commander</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Side: Graphic High-Contrast Brand Pillar (Inspired by SHOEASY Red Box) -->
+<div class="lg:col-span-4 bg-secondary-container text-on-secondary-container rounded-xl p-space-lg lg:p-space-xl flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary-fixed">SÉRIE CHAMPIONNAT</span>
+<span class="material-symbols-outlined text-[28px] text-on-secondary-container">terrain</span>
+</div>
+<!-- Vertical / Massive Typographic Statement -->
+<div class="my-space-xl select-none flex flex-col items-start">
+<span class="font-display-xl text-display-xl tracking-tighter uppercase leading-[0.85] text-surface-container-lowest block">SHOEASY</span>
+<span class="font-display-xl text-display-xl tracking-tighter uppercase leading-[0.85] text-surface-container-lowest/40 block">TRAIL</span>
+<span class="font-headline-lg text-headline-lg uppercase text-tertiary-fixed tracking-tight mt-2">FEMME ALPINE</span>
+</div>
+<div class="space-y-space-sm bg-inverse-surface/30 backdrop-blur-md p-space-md rounded-lg">
+<div class="flex items-center justify-between font-label-technical text-label-technical uppercase text-secondary-fixed">
+<span>RECORD D’ÉLÉVATION EN COURSE</span>
+<span class="font-bold">+9,840M</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container">
+              Testée sur le circuit de l’Ultra-Trail du Mont-Blanc. Réactivité légère sans fatigue au sol.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Collection Page Header & Navigation Pillars -->
+<section class="w-full px-margin-mobile lg:px-margin pt-space-lg pb-space-md">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs text-secondary mb-2">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-technical text-label-technical uppercase tracking-widest">PERFORMANCE DIVISION</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">
+            COLLECTION TRAIL &amp; MONTAGNE FEMME
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl">
+            Amorti inégalé et agilité précise sur terrain alpin technique. Ergonomie ajustée à la biomécanique du pied féminin.
+          </p>
+</div>
+<!-- Quick Spec Counters -->
+<div class="flex items-center gap-space-xl">
+<div>
+<span class="font-headline-md text-headline-md text-on-surface block font-extrabold">24</span>
+<span class="font-label-technical text-label-technical text-outline uppercase">MODÈLES CHARGÉS</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md text-secondary block font-extrabold">5.0<span class="text-label-md">MM</span></span>
+<span class="font-label-technical text-label-technical text-outline uppercase">PROFIL MOYEN CRAMPONS</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md text-primary block font-extrabold">242<span class="text-label-md">G</span></span>
+<span class="font-label-technical text-label-technical text-outline uppercase">POIDS MOYEN</span>
+</div>
+</div>
+</div>
+<!-- Category Filter Tabs -->
+<div class="mt-space-lg flex items-center gap-space-xs overflow-x-auto pb-2 scrollbar-none">
+<button class="px-5 py-2.5 rounded-full bg-on-surface text-surface font-label-lg text-label-lg uppercase tracking-wider whitespace-nowrap shadow-sm">
+          Tous les modèles
+        </button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg uppercase tracking-wider whitespace-nowrap">
+          Ultra distance (50K+)
+        </button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg uppercase tracking-wider whitespace-nowrap">
+          Fastpacking &amp; Alpin
+        </button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg uppercase tracking-wider whitespace-nowrap">
+          GORE-TEX Imperméable
+        </button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg uppercase tracking-wider whitespace-nowrap">
+          Racers ciel ultralégers
+        </button>
+</div>
+</div>
+</section>
+<!-- Filter & Sorting Tool Strip -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-md">
+<div class="max-w-[1440px] mx-auto bg-surface-container-low rounded-xl p-space-md flex flex-wrap items-center justify-between gap-space-md">
+<!-- Left Filtres -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Cushioning Level Dropdown -->
+<div class="relative group">
+<button class="h-10 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center gap-2 shadow-sm hover:bg-surface-container transition-colors">
+<span class="text-outline">AMORTI :</span>
+<span class="font-bold">Moelleux &amp; Équilibré</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Stability Filter -->
+<div class="relative group">
+<button class="h-10 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider flex items-center gap-2 shadow-sm hover:bg-surface-container transition-colors">
+<span class="text-outline">STABILITÉ :</span>
+<span class="font-bold">Neutre</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Size Filter Pill Buttons -->
+<div class="hidden xl:flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg shadow-sm">
+<span class="font-label-technical text-label-technical text-outline px-2 uppercase">POINTURE US-F :</span>
+<button class="w-8 h-8 rounded text-on-surface hover:bg-surface-container font-label-technical text-label-technical font-bold">6</button>
+<button class="w-8 h-8 rounded text-on-surface hover:bg-surface-container font-label-technical text-label-technical font-bold">6.5</button>
+<button class="w-8 h-8 rounded bg-on-surface text-surface font-label-technical text-label-technical font-bold">7</button>
+<button class="w-8 h-8 rounded text-on-surface hover:bg-surface-container font-label-technical text-label-technical font-bold">7.5</button>
+<button class="w-8 h-8 rounded text-on-surface hover:bg-surface-container font-label-technical text-label-technical font-bold">8</button>
+<button class="w-8 h-8 rounded text-on-surface hover:bg-surface-container font-label-technical text-label-technical font-bold">8.5</button>
+<button class="w-8 h-8 rounded text-on-surface hover:bg-surface-container font-label-technical text-label-technical font-bold">9</button>
+</div>
+<!-- Color Palette Quick Picks -->
+<div class="hidden lg:flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<span class="font-label-technical text-label-technical text-outline uppercase mr-1">COLORIS :</span>
+<button aria-label="Menthe violette" class="w-5 h-5 rounded-full bg-gradient-to-tr from-purple-700 to-teal-400 ring-2 ring-primary ring-offset-1"></button>
+<button aria-label="Orange corail" class="w-5 h-5 rounded-full bg-gradient-to-tr from-orange-500 to-amber-300"></button>
+<button aria-label="Cyan ardoise" class="w-5 h-5 rounded-full bg-gradient-to-tr from-slate-600 to-cyan-400"></button>
+<button aria-label="Blanc alpin" class="w-5 h-5 rounded-full bg-gradient-to-tr from-zinc-200 to-amber-200"></button>
+</div>
+</div>
+<!-- Right Sort & Grid Actions -->
+<div class="flex items-center gap-space-sm ml-auto">
+<span class="font-label-technical text-label-technical text-outline uppercase hidden sm:inline">TRIER PAR :</span>
+<select class="h-10 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider outline-none cursor-pointer shadow-sm">
+<option>Sélection vedette</option>
+<option>Dernières nouveautés</option>
+<option>Prix : décroissant</option>
+<option>Prix : croissant</option>
+<option>Amorti maximal</option>
+</select>
+<button aria-label="Ouvrir les filtres" class="h-10 px-4 rounded-lg bg-on-surface text-surface font-label-md text-label-md uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="hidden sm:inline">Filtres (3)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Product Catalog Grid (6 Technical Shoes) -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-lg">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Carte Produit 1 : MAFATE SPEED 4 FEMME -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">
+              PRO TRAIL ELITE
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">
+              CRAMPONS 5,0MM
+            </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Hoka Mafate Speed 4 femme, violet profond et orange" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc_PR-57WF3b93qNcSIRqOhik8ULJYdgacktU914UXr8X5jzeXu4kNhkQsOfg6OgFcXNpnj5iNKONBn9l1KuknLuyGQvUM3pGhBh6RuOQV0PB_8YADs3xxJxaj1N2ZjrNO88OtB8jlMulxKrj8hfxOgdNlfPMhy6mQQuKXhJxyPIhz-WXS3WTGj3IVf0pBVMF6UmLE78F3fHAVBzedPEkF7vXyax-dzMpQxzlIkuVeKolbtEbQ_nTc"/>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Amorti PROFLY™+</span>
+<span class="font-label-technical text-label-technical text-primary uppercase font-bold">Vibram® Megagrip</span>
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Drop : 4mm</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(420)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">
+            MAFATE SPEED 4 FEMME
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Maille jacquard technique avec mousse réactive PROFLY™+ et base agressive Vibram® Megagrip.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+              €180.00
+            </span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>AJOUTER AU PANIER</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Carte Produit 2 : SPEEDGOAT 5 FEMME -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">
+              MEILLEURE VENTE
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">
+              CRAMPON TRACTION
+            </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Hoka Speedgoat 5 femme, orange corail et lilas" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQexvRcaaIlxTvdCEjlLJAR-e4Ntgy4IGZCZceGKxvCujkR3hXtdhTrv91zakXhYo0P0k9WfqG-ZhTIgnvvpX3R-oyJ3qmu7kaW80S9x8gQjikBerdd7DHBF363oz8OtY1_xIH6KI8Dc79eQ3qttVqP_saM5bBAzTKNlIYKvjKtbpxBo23oVu-xfoX_FHnLJAv6tCrtWvS5lC6epkPE6ArlDMTcOl3PoA_3wxX7OvbgKWZYS-Rd2ch"/>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Amorti PROFLY™+</span>
+<span class="font-label-technical text-label-technical text-primary uppercase font-bold">Vibram® Megagrip</span>
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Drop : 4mm</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(1 120)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">
+            SPEEDGOAT 5 FEMME
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Châssis allégé avec Meta-Rocker retravaillé pour des transitions vives sur racines alpines humides.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+              €160.00
+            </span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>AJOUTER AU PANIER</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Carte Produit 3 : ZINAL 2 FEMME -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">
+              VITESSE ULTRALÉGÈRE
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">
+              PROFIL BAS
+            </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Hoka Zinal 2 femme, jaune citron et cyan" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCik8eF1qO7ndTsRNh8N7y0T6Mri6ZHNdrlP7wCW0KE0OCQg-apYZnVIG2MaYZIXMEzehiKG1R0-K0LW3Hs6-bU4UlXoXUgOyytaUgE4IlX_pseQpHzvY2ZMJEQMTtf1CVps2R4giE4Bw5xTunMUDVXOEvA66Exg9Q32xrc5Pp4a4EvZAMBAlBFOs4jTyL-A-oDzbmVcG6FUm03hHtQajG_4vlJle_JO7Q0TIhm8BQCu5urgXNPZRJ4"/>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Amorti PROFLY™+</span>
+<span class="font-label-technical text-label-technical text-primary uppercase font-bold">Vibram® Megagrip</span>
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Drop : 4mm</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4.7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(280)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">
+            ZINAL 2 FEMME
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            L'essentiel, rien de plus. Retour d'énergie ultra-réactif avec col stretch qui bloque les cailloux.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+              €170.00
+            </span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>AJOUTER AU PANIER</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Carte Produit 4 : TORRENT 3 FEMME -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">
+              TECHNIQUE ET VIVE
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">
+              RESPIRANT
+            </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Hoka Torrent 3 femme, bleu ardoise et menthe" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4T3mK13mfNPjp0kzvlxK0dO7lHCozpZ7EsYIhaWRoMnpz2Rs9LNhgpRePeharlQ0eSOTsZ2gc4PG8C3HSfBGebYwmygkzTH8qDoXTPnclv0tbhl8isPLyJIe8XYNIIbkWGKnAGKwnJfamH9Z6SktdMCg3yI7QZWt1oPTnyVeHKLU_W_pyQxP2SHaS6AZBRC5oDCiRlHQIVJ9EZiw7D8u6ZZ79ILqQWwq9l34_W2NAFvRFAsNXBaMx"/>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Amorti PROFLY™+</span>
+<span class="font-label-technical text-label-technical text-primary uppercase font-bold">Vibram® Megagrip</span>
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Drop : 4mm</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4.8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(340)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">
+            TORRENT 3 FEMME
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Tige affinée en fil technique respirant. Zone PROFLY™ pour des poussées dynamiques.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+              €140.00
+            </span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>AJOUTER AU PANIER</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Carte Produit 5 : BONDI 8 ÉDITION TRAIL -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">
+              MAX AMORTI
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">
+              LONGUE DISTANCE
+            </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Hoka Bondi 8 édition trail femme, blanc cassé et doré" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpAX3mARY-yY6M7TdE_uQ2LcUXEXTilvp6PiFTVlr9jGsrI9f3gMch8lq4XP1dTSwck7Nl6QIjeFyAheDU4UcsZQCto8KZyiQHtkJX7pfPHEvZ6S4BnZ8aRfr3uyVCUlsj5Ym2FMCP--amcOJjf-BOjiJ0sf_he9dlOxMP89zHwz0CY2pDh__fFleUID4paLBLerabeSTLgS1YckQ5_bknxOdAkOPZJyUS_y9ijv3ylO-4b4iK7Rrd"/>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Amorti PROFLY™+</span>
+<span class="font-label-technical text-label-technical text-primary uppercase font-bold">Vibram® Megagrip</span>
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Drop : 4mm</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(890)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">
+            BONDI 8 ÉDITION TRAIL
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Mousse généreuse haute densité avec renfort d'orteils et micro-crampons pour les surfaces mixtes.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+              €175.00
+            </span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>AJOUTER AU PANIER</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Carte Produit 6 : TRANSPORT GTX FEMME -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">
+              BOUCLIER GORE-TEX
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">
+              IMPERMÉABLE
+            </span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Hoka Transport GTX femme, gris orage et réfléchissant" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvnBNBIsYQr6L2GRc8rKAy6kkRXRtKdTEOipORfhdBC09U47TO2rwZ6GmLwxQYj29irg7U5u4yn4MBQR6V46evIFulpdVN235lAnLSeOxwBGxpXGKls8rZRPPqTjSIC48DJ403Mrz7paMkkqwVjJ6_P6NrrRwUuxGQ1iuOlg2QMSN0LrzloXtJ_NQyIEd3H3d5NlwURG38RFp3y1LNduKk9cPSPQE6obiLpEpPAtoeRb5WC7l8l0aA"/>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Amorti PROFLY™+</span>
+<span class="font-label-technical text-label-technical text-primary uppercase font-bold">Vibram® Megagrip</span>
+<span class="font-label-technical text-label-technical text-on-surface font-bold uppercase">Drop : 4mm</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(512)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">
+            TRANSPORT GTX FEMME
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Membrane GORE-TEX Invisible Fit imperméable avec réflectivité 360° et laçage rapide.
+          </p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">
+              €185.00
+            </span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>AJOUTER AU PANIER</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Pagination / Load More Bar -->
+<div class="mt-space-xl flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container rounded-xl p-space-md">
+<span class="font-label-md text-label-md text-on-surface-variant">
+          Affichage de <span class="font-bold text-on-surface">6</span> modèles sur <span class="font-bold text-on-surface">24</span> — Chaussures alpines femme
+        </span>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center hover:bg-on-surface hover:text-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<span class="font-label-technical text-label-technical font-bold px-3">PAGE 01 / 04</span>
+<button class="w-10 h-10 rounded-full bg-surface-container-lowest text-on-surface flex items-center justify-center hover:bg-on-surface hover:text-surface transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs Matrix Strip -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl">
+<div class="max-w-[1440px] mx-auto bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-sm">
+<div class="mb-space-lg flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-bold">BANC D’ESSAI</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase">COMPARATIF LABO</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Métriques biométriques standardisées collectées sur 10 000 km de télémétrie en montagne technique.
+        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-technical text-label-technical text-outline uppercase">SEMELLE INTERMÉDIAIRE EXCLUSIVE</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-extrabold mt-1">PROFLY™+</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Conception double couche pour un posé indulgent et une poussée propulsée.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-technical text-label-technical text-outline uppercase">GOMME DE SEMELLE</span>
+<p class="font-headline-sm text-headline-sm text-secondary font-extrabold mt-1">MEGAGRIP</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Caoutchouc Vibram® avec crampons Traction Lug : +32 % de contact au sol.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-technical text-label-technical text-outline uppercase">GÉOMÉTRIE FEMME</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-extrabold mt-1">TALON ÉTROIT</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Col anatomique qui verrouille le calcanéum pour éliminer les ampoules en montée.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-technical text-label-technical text-outline uppercase">INDICE DURABILITÉ</span>
+<p class="font-headline-sm text-headline-sm text-primary font-extrabold mt-1">73 % RECYCLÉ</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Empeigne, languette et col en maille issue de plastique post-consommation certifié.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Community & Athlete Feedback Section (Editorial Style from Reference) -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-bold">TEAM MONTAGNE SHOEASY</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight">
+            APPROUVÉ PAR LES TRAILEURS ÉLITE
+          </h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Previous Slide" class="w-12 h-12 rounded-full bg-surface-container-lowest text-on-surface hover:bg-on-surface hover:text-surface transition-colors flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<button aria-label="Next Slide" class="w-12 h-12 rounded-full bg-surface-container-lowest text-on-surface hover:bg-on-surface hover:text-surface transition-colors flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Athlete Showcase Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Athlete Action Image Feature -->
+<div class="lg:col-span-6 rounded-xl overflow-hidden aspect-[4/3] relative shadow-md">
+<img class="w-full h-full object-cover" data-alt="Female ultra-distance mountain trail runner navigating an exposed alpine ridge in Chamonix France at golden sunrise, wearing orange trail shoes and hydration pack with dramatic glacier backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcEzOzLWktDm97uaPz-kJFCDGJHVqsvVfxWP-VDXZy03qAG7mFe7wsk1ChGvQ_ucUT_gwaZsj8_G23SxUjXpZxhZHkfKKKcNRQJuv23XBWxmE2WoH0maZQOXebTzmxVvBmgPhZ1FO4FHRqSVUTEARU00ERkHDnX4G3oyJiEHMTzCqmjplrkT5Ta4bggcl_xRlOaGKVPVn3u9fHogFMl-CAquDi-vlVdV78Sw6B48DuVUVENRf1uUBF"/>
+<div class="absolute top-4 left-4 bg-inverse-surface/80 backdrop-blur-md px-3 py-1.5 rounded-full text-inverse-on-surface font-label-technical text-label-technical uppercase tracking-wider">
+            ULTRA MONT-BLANC 171KM // 1RE PLACE
+          </div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-space-md rounded-lg flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold uppercase">CAMILLE R.</span>
+<span class="font-label-technical text-label-technical text-outline block">TRAILEUSE ULTRA PRO // ANNECY, FRANCE</span>
+</div>
+<span class="font-label-technical text-label-technical px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-bold uppercase">
+              MAFATE SPEED 4
+            </span>
+</div>
+</div>
+<!-- Athlete Review / Quotes Panel -->
+<div class="lg:col-span-6 flex flex-col justify-center space-y-space-lg pl-0 lg:pl-space-lg">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<span class="font-display-xl text-display-xl text-secondary-container leading-none select-none font-black block">“</span>
+<p class="font-body-lg text-body-lg text-on-surface -mt-4 mb-space-md leading-relaxed">
+              When descending down 1,500 vertical meters of loose limestone scree into Courmayeur at 3 AM, there is zero room for toe jamming or lug slip. The Mafate Speed 4 has the most reliable contact patch I’ve ever raced in.
+            </p>
+<div class="flex items-center justify-between pt-space-sm border-t-0">
+<div>
+<span class="font-label-lg text-label-lg uppercase font-extrabold text-on-surface block">CAMILLE ROUSSEAU</span>
+<span class="font-label-technical text-label-technical text-outline">AMBASSADRICE TRAIL ALPINE CHAMONIX</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<!-- Secondary Quote Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close up action shot of trail runner tying neon shoelaces on a rocky trail trailhead with morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8l9vY6hAhYSGNWSyGkY4qazCU2196cv2WHk6c-irPT3tFb-fMJb9RhWtg69qccqwLsAo0HMXfl573A46Cvh76AMO_uVjhG6D2M_DrirFppr0jP-UHuGKbBlHrjSlQ_P4kGIl-M9Yzyz10mDgUUzmIYWFelGoUjlXlaFqwO-jsHKOMedEcF9eacu-dKSH9iYYmrTWh78Du1U-fgnZgK5W_h8hXBKxju_w9N5DLKRkhUSej1SXZBKas"/>
+</div>
+<div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">
+                « La Speedgoat 5 m’a apporté la stabilité latérale pour conquérir la Dolomites Skyrace sans torsion de cheville. »
+              </p>
+<span class="font-label-technical text-label-technical uppercase font-bold text-on-surface">ELENA V. // BOLZANO, ITALIE</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lifestyle & Athlete User Gallery ("ON ADORE VOIR YOUR STYLE") -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary font-bold">#SHOEASYWOMEN // FIL INSTAGRAM</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase">SUR LES SOMMETS // STYLE COMMUNAUTÉ</h2>
+</div>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-primary hover:text-on-surface transition-colors flex items-center gap-1" href="#">
+<span>Explorer le tag communauté</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="aspect-square rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Female mountain athlete pausing on a rocky summit ledge tying bright orange trail shoes with panoramic mountain valley in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKtSOQO7TVCWgmkOxKnvj24MDQ9JiFc1omGU1nMjT3JiIQrxhfYsSCZLhvKT60rrhYQ3Ms4-PZW9XSL6cLVGzcWphyg0ZUUzLICgWbBnT3g1pXY3x_8s7sm_Rs5WtP6m5XbH8YIYH9mdwfuv0MiCbHbP40IzMlk_CDnHUjTziOVI1CfKY5ZNOVrfKaDI-pci7EPZJmz9MaQX-ZxAg-r7G16ErqfHm0UWi2dJS2fU85NMwdLX-om6m7"/>
+<div class="absolute inset-0 bg-inverse-surface/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-md">
+<span class="font-label-technical text-label-technical text-on-primary uppercase font-bold">@alpine_run_sarah</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Trail running shoes covered in fresh mud after extreme singletrack endurance run with autumn foliage background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKy6X1YABrYSTHnSQZpdaTmZkBouVDsaO3thRXBROsGGE91gfPhuJyE7EHL9vx0dqN6NDHusBbZfhSbSECMruSaP5Nu01Et_bM8wuk4w-ZSjCJ2q3H0-aHkBMDSe531GpgEfSsVnV6wYh7WXS9PzXfGXWoKvcrq-UNI4SbEgEaS4gqcOdP0w4WgRkjsetKuejmfJV6R1KplZUmcC0x807E9kCqipBS6U4ojzRz9jsr3fBAj9xRYT6n"/>
+<div class="absolute inset-0 bg-inverse-surface/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-md">
+<span class="font-label-technical text-label-technical text-on-primary uppercase font-bold">@chamonix_vert</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Athletic woman running up steep stone mountain stairway trail with high endurance pacing and mountain peaks behind" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBnlCWVaZ2z_aYmfOkqaVRRS4wREg0p9qh0oqxjecz4AApCtARhPeuM0N2RhVo7kTaFFFjkPS1Wsg2nt7fLng3JCGrLrKLNKBwBfO80RlWzIHmEVep0NTpKg2z7iouyWI3hAwyYp5gAn0jNvmpB-dTA8TAOjjtMC6TM2Mx7PRg8t_XZpSRgWkkJzthkHK5uJ0tBsIYkvRv9o8Jv0SCH28ljBOm9sP3m_7jnrm4G0sYMRONH5M29l-0"/>
+<div class="absolute inset-0 bg-inverse-surface/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-md">
+<span class="font-label-technical text-label-technical text-on-primary uppercase font-bold">@trail_clara</span>
+</div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dynamic shot of trail shoe tread splashing through mountain stream crossing in slow motion with water drops frozen in air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeVUXvBGgCb9wAzlqfdU25xDGh-VBZ_ZrkBy24Q8rChVJkMlzN3NwbrUTUutBSq9WWBd042bcuPlXCMHeo6Jn1MeYFp2FQAuUcZWAnMnS0jFkr93icJFECxCNNsQyr8JHS-Ri8e8SfX4Zj4gIUIK4OwYRruQYxd0HFxoQF1xNYfvw-FifNcLOqCdMJlLKGNRncGZC055AXQZsJpp4PA9cT8Tq8uXpEk9P89G9UXF3_aiy_gaYhs_Zy"/>
+<div class="absolute inset-0 bg-inverse-surface/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-space-md">
+<span class="font-label-technical text-label-technical text-on-primary uppercase font-bold">@dolomite_strides</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Quick Cart Action Drawer (Micro-interaction) -->
+<aside class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[95%] max-w-xl bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-full shadow-2xl flex items-center justify-between gap-space-md transition-all duration-300" id="trail-quick-bar">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-on-secondary-container">hiking</span>
+</div>
+<div class="truncate">
+<p class="font-label-technical text-label-technical uppercase tracking-wider text-secondary-fixed truncate">BESOIN D’AIDE POUR LA POINTURE ?</p>
+<p class="font-body-sm text-body-sm text-outline-variant truncate">Discutez avec notre labo d’ajustement alpin de Chamonix</p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="bg-primary-container text-on-primary-container hover:bg-surface hover:text-on-surface font-label-technical text-label-technical uppercase px-4 py-2 rounded-full transition-colors font-bold">
+        OUVRIR LE SCAN D’AJUSTEMENT
+      </button>
+<button aria-label="Close fit assistant" class="p-1 text-outline-variant hover:text-inverse-on-surface transition-colors" onclick="document.getElementById('trail-quick-bar').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</aside>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-y-space-xl gap-x-gutter mb-space-xl"><div class="lg:col-span-4 flex flex-col pr-space-lg"><div class="flex items-center gap-space-xs mb-space-sm"><span class="font-headline-sm text-headline-sm tracking-tight uppercase text-on-surface font-extrabold">SHOEASY</span><span class="w-2 h-2 rounded-full bg-secondary-container"></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-md">Athlétisme de montagne technique et systèmes trail de précision. Né pour l’ultra-distance, le terrain alpin et la performance sans compromis.</p><div class="flex items-center gap-space-sm"><a aria-label="Explorer les flux" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">alternate_email</span></a><a aria-label="Archives visuelles" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Diffusions en direct" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a></div></div><div class="lg:col-span-2 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">MENU</h3><ul class="flex flex-col gap-space-sm font-label-lg text-label-lg"><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="best-deals" href="offres.html">Collection</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="men" href="homme.html">Produit</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="women" href="femme.html">Nouveauté</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="kids" href="enfants.html">Chaussure Swimrun</a></li></ul></div><div class="lg:col-span-2 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">SÉCURITÉ</h3><ul class="flex flex-col gap-space-sm font-label-lg text-label-lg"><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Conditions d’utilisation</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Politique de confidentialité</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Paramètres cookies</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Conformité</a></li></ul></div><div class="lg:col-span-4 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-sm font-bold">NEWSLETTER</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Recevez les sorties trail tactiques, les actus des séries de courses et les innovations du labo.</p><form class="flex flex-col sm:flex-row gap-space-xs items-stretch"><input class="flex-1 h-12 px-space-md rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Votre e-mail" type="email"/><button class="h-12 px-space-lg rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider transition-colors duration-150 flex items-center justify-center" type="button">ENVOYER</button></form></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Shoeasy, Inc. Tous droits réservés.</p><div class="flex items-center gap-space-md font-label-technical text-label-technical uppercase text-outline"><span>ALTIMETRY RIG // 45.9237° N, 6.8694° E</span><span>SHOEASY LAB V4.2</span></div></div></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/cart.js"></script>
+</body></html>

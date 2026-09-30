@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>SHOEASY | Course Trail &amp; Montagne</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","on-primary-fixed-variant":"#003fa4","on-surface":"#131b2e","on-tertiary-fixed":"#261a00","on-tertiary-fixed-variant":"#5c4300","outline":"#727687","primary-container":"#f04323","on-background":"#131b2e","tertiary-fixed":"#ffdf9f","tertiary-container":"#916c00","primary-fixed-dim":"#b3c5ff","primary-fixed":"#dae1ff","on-primary-container":"#f8f7ff","on-tertiary":"#ffffff","on-error-container":"#93000a","on-secondary-fixed-variant":"#822700","surface-dim":"#e6e8eb","error-container":"#ffdad6","surface-container-low":"#f4f5f7","secondary-container":"#f04323","inverse-on-surface":"#eef0ff","on-primary-fixed":"#001849","background":"#ffffff","on-secondary-container":"#fffbff","surface-container-high":"#e6e8eb","tertiary":"#735500","on-primary":"#ffffff","on-secondary-fixed":"#390c00","tertiary-fixed-dim":"#f9bd22","surface-bright":"#ffffff","inverse-primary":"#b3c5ff","secondary":"#0c0d0e","surface-container-lowest":"#ffffff","outline-variant":"#c2c6d8","inverse-surface":"#283044","on-secondary":"#ffffff","surface":"#ffffff","on-error":"#ffffff","on-tertiary-container":"#fff7ee","secondary-fixed-dim":"#ffb59c","on-surface-variant":"#424656","primary":"#0c0d0e","surface-tint":"#0054d6","surface-container-highest":"#e6e8eb","secondary-fixed":"#ffdbcf","surface-variant":"#e6e8eb","surface-container":"#f4f5f7"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"1rem","space-md":"1rem","margin":"3rem","space-xl":"2.5rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg-mobile":["Helvetica Neue"],"headline-sm":["Helvetica Neue"],"display-xl-mobile":["Helvetica Neue"],"headline-md":["Helvetica Neue"],"headline-md-mobile":["Helvetica Neue"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Helvetica Neue"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-technical":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-xl":["Helvetica Neue"]},"fontSize":{"headline-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"700"}],"display-xl-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["32px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"700"}],"headline-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-technical":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"500"}],"display-xl":["72px",{"lineHeight":"76px","letterSpacing":"-0.03em","fontWeight":"800"}]}}}}</script>
+<style id="shoeasy-brand">
+  ::selection{background:#f04323;color:#fff}
+  h1,h2,h3,.font-brand-heading{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif!important;font-weight:800!important;text-transform:uppercase;letter-spacing:-0.015em!important}
+  h1{line-height:.95!important} h2{line-height:1!important}
+  .line-mask{display:block;overflow:hidden;padding-bottom:.08em}.line-mask>.ln{display:block;will-change:transform}
+  #cart-count{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#f04323;color:#fff;font-size:11px;font-weight:800;margin-left:6px}
+  .shoeasy-toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:#0c0d0e;color:#fff;padding:12px 18px;border-radius:999px;font-size:13px;font-weight:700;opacity:0;transition:.3s;z-index:9999}
+  .shoeasy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .shoeasy-topbar{position:sticky;top:0;z-index:50;background:#0c0d0e;color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em}
+  .shoeasy-topbar a{color:#fff;text-decoration:none}.shoeasy-topbar a:hover{color:#f04323}
+</style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-xs" data-path="women" href="index.html"><span class="font-headline-md text-headline-md tracking-tighter text-on-surface uppercase select-none">SHOEASY</span><span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1"></span></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-on-surface font-bold"><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="women" href="femme.html">FEMME</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="men" href="homme.html">HOMME</a><a aria-current="page" class="uppercase tracking-wider transition-colors py-space-xs text-on-surface font-bold" data-path="kids" href="enfants.html">ENFANTS</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="best-deals" href="offres.html">MEILLEURES OFFRES</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="faq" href="aide.html">AIDE</a></nav></div><div class="flex items-center gap-space-md"><button aria-label="Rechercher des chaussures" class="p-space-xs text-on-surface hover:text-primary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[24px]">search</span></button><button aria-label="Favorites" class="p-space-xs text-on-surface hover:text-secondary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[24px]">favorite</span></button><a aria-label="Panier" class="p-space-xs text-on-surface hover:text-primary transition-colors relative flex items-center justify-center" data-path="cart" href="panier.html"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container font-label-technical text-label-technical rounded-full h-5 min-w-[20px] px-1 flex items-center justify-center leading-none font-bold">2</span></a><span id="cart-count">0</span><div class="ml-space-xs pl-space-xs flex items-center"><img alt="Profil" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XGse2ij7B7jR0PNG0vkyR1uLaUWmn5jJKzneg2_x56d14OxeiFiHjLy5pmCU9JFyjFfuL8X2vLVUsr0r2Gy9JLRKNuioxQ-n69WRDP7wJbgGniX-veoF7jiPzeck_prllw_ney_oj_ixHiJO8d7EVZfpG7eUTrs4DijRQWXSmXExovZ8Yo0C-akZT-3vFWbt7orKCMLAt5XkQbm8vR-Ctj0zDva0mgctaB9ODzA7wl_NjBkGvpPCwp5ODYe5HpddtdYSgixqhX"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Tactical Announcement Ticker -->
+<div class="w-full bg-secondary-container text-on-secondary-container py-space-xs px-margin-mobile lg:px-margin">
+<div class="max-w-[1440px] mx-auto flex items-center justify-between font-label-technical text-label-technical uppercase tracking-wider">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-surface-bright animate-ping"></span>
+<span>SYSTÈME ALPIN JUNIOR // TESTÉ LABO EN TERRAIN NATUREL</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-lg">
+<span>GARANTIE ESSAI TRAIL 30 JOURS</span>
+<span>LIVRAISON OFFERTE DÈS 80 €</span>
+</div>
+</div>
+</div>
+<!-- Hero Section (High-Impact Typographic + Visual Split) -->
+<section class="w-full bg-surface px-margin-mobile lg:px-margin pt-space-lg pb-space-xl">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<!-- Left Hero Media Card with Sky Backing & Tech Callouts -->
+<div class="lg:col-span-8 bg-primary-container rounded-lg p-space-md lg:p-space-lg relative overflow-hidden flex flex-col justify-between min-h-[460px] lg:min-h-[520px] shadow-sm">
+<!-- Living Background Scrim -->
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-container via-[#207dff] to-[#70a9ff] opacity-95"></div>
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(white 1.5px, transparent 1.5px); background-size: 24px 24px;"></div>
+<!-- Ambient Clouds Effect -->
+<div class="absolute top-12 left-1/4 w-80 h-80 bg-white/20 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Row Labels -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="bg-surface-container-lowest text-on-surface px-3 py-1 rounded-full font-label-technical text-label-technical tracking-widest uppercase font-extrabold shadow-sm">
+              LABO NOUVELLE GÉNÉRATION
+            </span>
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full font-label-technical text-label-technical tracking-wider uppercase font-bold">
+              SÉRIE ENFANTS 04
+            </span>
+</div>
+<span class="font-label-technical text-label-technical text-on-primary-container uppercase tracking-widest hidden sm:inline-block">
+            ALT // SPÉC 2 400M
+          </span>
+</div>
+<!-- Floating Hero Shoe Image with Tech Badges -->
+<div class="relative z-10 flex flex-col items-center my-space-md group">
+<div class="relative w-full max-w-lg lg:max-w-xl aspect-[16/10] flex items-center justify-center">
+<img class="w-full h-full object-contain filter drop-shadow-[0_25px_35px_rgba(0,18,70,0.35)] transition-transform duration-300 group-hover:scale-105" data-alt="Vibrant electric orange and citrus yellow kids trail running shoe suspended dynamically mid-air against clear mountain sky background with rugged lugged sole visible, athletic high-energy dynamic studio shot, commercial ultra quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVtdA78rksGQVTCX8yxdfZ_7tCVczUT2LZ-JOX3rtuTACKhoMsb9vLvaplFKFWqcLKP17YDVs4A29vpjT61fuHf-uDKdSOhPro_zAeQX_R0w08jfW2B93JS0wR8-dI1D8UJa737d-c1NCQBdwISbfAf6F59-0dpWRo8S-UrLa_A21MLLm0mD3_k-TgitWXP0__UG45MnbUqE1ZXTyvtyJqf_CRn7q-9djQdSmr7aR1x9g9fka-M3rQ"/>
+<!-- Tech Pin 1: Toe Guard -->
+<div class="absolute top-8 left-4 sm:left-12 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-technical text-label-technical text-on-surface uppercase">Renfort d’orteils anti-chocs</span>
+</div>
+<!-- Tech Pin 2: Quick Lace -->
+<div class="absolute bottom-10 right-4 sm:right-10 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-technical text-label-technical text-on-surface uppercase">Laçage rapide Speed-Lock</span>
+</div>
+</div>
+</div>
+<!-- Hero Card Bottom Bar -->
+<div class="relative z-10 flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high border-2 border-white flex items-center justify-center font-label-technical text-on-surface font-bold text-[10px]">98%</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container border-2 border-white flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">grade</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+<span class="font-bold">4.9 / 5.0</span> par plus de 850 jeunes explorateurs &amp; parents
+            </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-10 px-space-md rounded-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-container-high transition-colors shadow-sm flex items-center gap-1" id="quick-view-hero">
+<span>VOIR LES DÉTAILS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Billboard / Editorial Banner (Inspired by Image's Massive SHOEASY Plaque) -->
+<div class="lg:col-span-4 bg-secondary-container rounded-lg p-space-lg flex flex-col justify-between text-on-secondary-container relative overflow-hidden shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-technical text-label-technical uppercase tracking-widest opacity-80">DIVISION ÉQUIPEMENT</span>
+<span class="font-label-technical text-label-technical uppercase tracking-widest bg-on-secondary-container/10 px-2 py-0.5 rounded">SHOEASY-JUNIOR</span>
+</div>
+<!-- Huge Vertical Typographic Block mimicking poster composition -->
+<div class="my-space-lg">
+<h1 class="font-display-xl text-display-xl uppercase tracking-tighter leading-none select-none break-words text-on-secondary-container">
+            SHOEASY<br/><span class="opacity-90">ENFANTS</span>
+</h1>
+<p class="font-body-md text-body-md text-on-secondary-container/90 mt-space-md max-w-xs">
+            Amorti et durabilité taille montagne, conçus pour les pieds qui grandissent, les sauts à fort impact et l’énergie sans limites.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-md">
+<div class="flex items-center justify-between font-label-technical text-label-technical uppercase py-2">
+<span>SYSTÈME DE POINTURES</span>
+<span class="font-bold">EU 28 - 39 // US 10.5K - 7Y</span>
+</div>
+<a class="h-12 w-full rounded-full bg-on-secondary-container text-secondary-container font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-surface-bright transition-colors shadow-sm" href="#collection-grid">
+<span>VOIR LA COLLECTION</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Filter & Segment Bar -->
+<section class="w-full bg-surface-container-low py-space-md sticky top-20 z-30 shadow-sm backdrop-blur-md bg-surface-container-low/95">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Primary Segmented Categories -->
+<div class="flex items-center gap-space-xs overflow-x-auto w-full md:w-auto pb-1 md:pb-0 scrollbar-none" id="filter-pills">
+<button class="filter-btn active-pill h-9 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors whitespace-nowrap shadow-sm" data-filter="all">
+          Tous enfants (18)
+        </button>
+<button class="filter-btn h-9 px-space-md rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-colors whitespace-nowrap" data-filter="youth">
+          Jeunes (pointures 3.5 - 7)
+        </button>
+<button class="filter-btn h-9 px-space-md rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-colors whitespace-nowrap" data-filter="kids">
+          Petits (10.5 - 3)
+        </button>
+<button class="filter-btn h-9 px-space-md rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-colors whitespace-nowrap" data-filter="quicklace">
+          Laçage rapide facile
+        </button>
+<button class="filter-btn h-9 px-space-md rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-colors whitespace-nowrap" data-filter="water">
+          Résistant à l’eau
+        </button>
+</div>
+<!-- Right Utility Actions: Size Guide Trigger & Quick Sort -->
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<button class="h-9 px-space-md rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-technical text-label-technical uppercase tracking-wider flex items-center gap-1.5 transition-colors" id="open-size-guide">
+<span class="material-symbols-outlined text-[16px]">straighten</span>
+<span>Calculateur de pointure enfant</span>
+</button>
+<div class="h-9 px-space-md rounded-full bg-surface-container-lowest text-on-surface flex items-center gap-1 font-label-technical text-label-technical uppercase">
+<span class="text-outline">TRI :</span>
+<span class="font-bold cursor-pointer hover:text-primary">Sélection vedette</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Headline Section with Arrow Navigation (Exact Pattern from Reference) -->
+<section class="w-full bg-surface px-margin-mobile lg:px-margin pt-space-xl pb-space-md" id="collection-grid">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<p class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-bold mb-space-xs">
+          MATRICE CHAUSSURES // EXPLORER LES TERRAINS
+        </p>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">
+          CHOISISSEZ LA PAIRE<br/>PARFAITE POUR VOUS
+        </h2>
+</div>
+<div class="flex items-center gap-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs hidden sm:block">
+          Choisissez des chaussures trail haute accroche avec coques talonnières anatomiques pour le mouvement naturel des jeunes.
+        </p>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Previous footwear" class="w-12 h-12 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<button aria-label="Next footwear" class="w-12 h-12 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Showcase Grid (Matching 4-Up High Contrast Athletic Cards) -->
+<section class="w-full bg-surface px-margin-mobile lg:px-margin pb-space-xl">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter" id="product-card-container">
+<!-- Shoe 1: HOKA Youth Speedgoat 5 -->
+<div class="product-item youth quicklace group bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between hover:shadow-md transition-all duration-200" data-shoe="speedgoat">
+<div>
+<!-- Card Header & Badge -->
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<span class="bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full font-label-technical text-label-technical uppercase font-extrabold tracking-wider">
+              HÉROS DU TRAIL
+            </span>
+<button aria-label="Add to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-secondary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Product Visual Well -->
+<div class="relative w-full aspect-square flex items-center justify-center overflow-hidden my-space-sm bg-surface-container-lowest/60 rounded-lg">
+<img class="w-full h-full object-contain p-space-sm group-hover:scale-105 transition-transform duration-300" data-alt="Top-angle studio shot of HOKA Youth Speedgoat 5 kids trail running shoe in energetic flame orange and charcoal gray, rugged technical multi-surface tread lugs visible, pure white background studio packshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa9ehrk7YcG24yPwU8n5zkzsddTvsI-5x0rI-oc7oTHWPDpW-MYtfkChNbGknS1e9AkmQDffjB4mPSpCkn19VTNiSRhrTad01-dnR32kmxCc3uus7YEGRQ7xfZ_DFkHfbawjEZ22VBMJCxIFM9lvj00j1ZV6oolPos6grZRRKSD9wFPFfqK4vOC2iFmcNKzuTQkjH9ozyJUTITaDWKIsub7P1oO_8dFG-r-YBHsnBd9Fgbw6agTyok"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-technical text-label-technical text-on-surface uppercase">
+              Crampons 4,0mm
+            </div>
+</div>
+<!-- Colorway Dot Selectors -->
+<div class="flex items-center gap-1.5 mb-space-sm">
+<span class="w-3.5 h-3.5 rounded-full bg-[#ff5500] ring-2 ring-inverse-surface ring-offset-2"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="font-label-technical text-label-technical text-outline ml-1">+2 coloris</span>
+</div>
+<!-- Typography Stack -->
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+            SPEEDGOAT 5 JUNIOR
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Mini chaussure trail avec pare-pierres renforcé et accroche inspirée Vibram.
+          </p>
+</div>
+<!-- Metric Specs Strip & Price Action -->
+<div class="mt-space-md pt-space-sm">
+<div class="grid grid-cols-2 gap-2 py-space-xs font-label-technical text-label-technical text-on-surface uppercase mb-space-sm bg-surface-container-lowest/70 px-2 rounded">
+<div><span class="text-outline">POIDS :</span> 218g</div>
+<div><span class="text-outline">DROP:</span> 4.0mm</div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">€110.00</span>
+</div>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-technical text-label-technical uppercase tracking-wider transition-colors">
+              Ajouter au panier
+            </button>
+</div>
+</div>
+</div>
+<!-- Shoe 2: HOKA Kids' Clifton 9 -->
+<div class="product-item kids group bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between hover:shadow-md transition-all duration-200" data-shoe="clifton">
+<div>
+<!-- Card Header & Badge -->
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-label-technical text-label-technical uppercase font-extrabold tracking-wider">
+              AMORTI QUOTIDIEN
+            </span>
+<button aria-label="Add to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-secondary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Product Visual Well -->
+<div class="relative w-full aspect-square flex items-center justify-center overflow-hidden my-space-sm bg-surface-container-lowest/60 rounded-lg">
+<img class="w-full h-full object-contain p-space-sm group-hover:scale-105 transition-transform duration-300" data-alt="Side profile studio photography of HOKA Kids Clifton 9 running shoe in vibrant iris purple and mint cyan accents, thick plush marshmallow foam midsole, crisp minimalist white backdrop studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWjdv7ImDuLHay1jWmAisn7aHxu5FOW_f9dijq8PLTsLLT_gKR46n3Hi3lyKfnEpAM_Y2MzoATBFhXogG8eGNRxDEiXfeYmx7Ksz2yF87J2fBvw5Cs2JZOuD0DENYWxV0pfiNW72BI6EN5kBv6dCni7qDtPwniBk3FWgzIU3y9llHZ59CPJqZW7jG_NKEgVwR6EC7EdlAHeGjttTukHWDR1dInJWkP9AEmeaSJBhCQRDPHAxlSlpxs"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-technical text-label-technical text-on-surface uppercase">
+              Amorti nuageux
+            </div>
+</div>
+<!-- Colorway Dot Selectors -->
+<div class="flex items-center gap-1.5 mb-space-sm">
+<span class="w-3.5 h-3.5 rounded-full bg-[#735500]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#9b51e0] ring-2 ring-inverse-surface ring-offset-2"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#00e5ff]"></span>
+<span class="font-label-technical text-label-technical text-outline ml-1">+3 coloris</span>
+</div>
+<!-- Typography Stack -->
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+            CLIFTON 9 ENFANT
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Amorti quotidien plume pour la cour de récré, le bitume et le confort.
+          </p>
+</div>
+<!-- Metric Specs Strip & Price Action -->
+<div class="mt-space-md pt-space-sm">
+<div class="grid grid-cols-2 gap-2 py-space-xs font-label-technical text-label-technical text-on-surface uppercase mb-space-sm bg-surface-container-lowest/70 px-2 rounded">
+<div><span class="text-outline">POIDS :</span> 176g</div>
+<div><span class="text-outline">DROP:</span> 4.0mm</div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">€95.00</span>
+</div>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-technical text-label-technical uppercase tracking-wider transition-colors">
+              Ajouter au panier
+            </button>
+</div>
+</div>
+</div>
+<!-- Shoe 3: HOKA Youth Anacapa Low -->
+<div class="product-item youth water group bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between hover:shadow-md transition-all duration-200" data-shoe="anacapa">
+<div>
+<!-- Card Header & Badge -->
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<span class="bg-surface-container-highest text-on-surface px-2.5 py-1 rounded-full font-label-technical text-label-technical uppercase font-extrabold tracking-wider">
+              RÉSISTANT À L’EAU
+            </span>
+<button aria-label="Add to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-secondary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Product Visual Well -->
+<div class="relative w-full aspect-square flex items-center justify-center overflow-hidden my-space-sm bg-surface-container-lowest/60 rounded-lg">
+<img class="w-full h-full object-contain p-space-sm group-hover:scale-105 transition-transform duration-300" data-alt="Perspective view of HOKA Youth Anacapa Low hiking and trail shoe in alpine sage green and cobalt blue accents, waterproof nubuck leather details with extended heel geometry, product studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuNLWML6_AVk4hmBoyoKfN-voOreGJBkKvQd7F27O8s5--faRJRz_0T8tVjxFzc6VE173_GEDsfQw1_uyCnHmMddKDVbDxMAh9KFlwb1dqdoM1TrRQoyXZHWlP1alw54aQwFalAdVks4AuW9JmJ_b096ru1TwDsth4hIKVjY4Cml2ZdnbvUYBbNyblekI63viYBAlS6bfVrtOwJL1czXmryEF9I1K9DSMt0TVYH0pXRgASjq0WCPCQ"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-technical text-label-technical text-on-surface uppercase">
+              Maille recyclée
+            </div>
+</div>
+<!-- Colorway Dot Selectors -->
+<div class="flex items-center gap-1.5 mb-space-sm">
+<span class="w-3.5 h-3.5 rounded-full bg-[#2e5b44] ring-2 ring-inverse-surface ring-offset-2"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#1b253d]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+<span class="font-label-technical text-label-technical text-outline ml-1">+1 coloris</span>
+</div>
+<!-- Typography Stack -->
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+            ANACAPA LOW JUNIOR
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Chaussure de rando alpine tout temps avec finition déperlante sans PFC.
+          </p>
+</div>
+<!-- Metric Specs Strip & Price Action -->
+<div class="mt-space-md pt-space-sm">
+<div class="grid grid-cols-2 gap-2 py-space-xs font-label-technical text-label-technical text-on-surface uppercase mb-space-sm bg-surface-container-lowest/70 px-2 rounded">
+<div><span class="text-outline">POIDS :</span> 260g</div>
+<div><span class="text-outline">DROP:</span> 6.0mm</div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">€120.00</span>
+</div>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-technical text-label-technical uppercase tracking-wider transition-colors">
+              Ajouter au panier
+            </button>
+</div>
+</div>
+</div>
+<!-- Shoe 4: HOKA Kids' Challenger Tout-terrain -->
+<div class="product-item kids quicklace water group bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between hover:shadow-md transition-all duration-200" data-shoe="challenger">
+<div>
+<!-- Card Header & Badge -->
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<span class="bg-primary-fixed-dim text-on-primary-fixed px-2.5 py-1 rounded-full font-label-technical text-label-technical uppercase font-extrabold tracking-wider">
+              ALL-TERRAIN HYBRID
+            </span>
+<button aria-label="Add to wishlist" class="w-8 h-8 rounded-full bg-surface-container-lowest/80 text-on-surface hover:text-secondary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Product Visual Well -->
+<div class="relative w-full aspect-square flex items-center justify-center overflow-hidden my-space-sm bg-surface-container-lowest/60 rounded-lg">
+<img class="w-full h-full object-contain p-space-sm group-hover:scale-105 transition-transform duration-300" data-alt="Angular studio photograph of HOKA Kids Challenger 7 Tout-terrain shoe in neon sulfur yellow and azure blue, hybrid gravel road-to-trail lug tread pattern, ultra clear digital commercial product photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf8sLVcAQJHSQsuCvvT9Ynwcsd_LIzHGQC9-JqxP37SW1nmSx_R0167CTCGbsrZuAZCV4eFCPJ1Ao38qHiZJ9C2jX73fji_Ml9PlHaJqEcBs9MaXESOrcyWYc79jyaGDTBMHDVEGXF2HIiaygmQreuDWRDxT5t33TXEvg5oNP8F26m6JhPn8ROxp1pOYoVTqM8jdMI0Cjn4UKdpbSkFkd_UOVAvPzsS91qGEuCqJ4wfpB43LnsgjfV"/>
+<div class="absolute bottom-2 left-2 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-technical text-label-technical text-on-surface uppercase">
+              Laçage rapide
+            </div>
+</div>
+<!-- Colorway Dot Selectors -->
+<div class="flex items-center gap-1.5 mb-space-sm">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f9bd22] ring-2 ring-inverse-surface ring-offset-2"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#0c0d0e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#0c0d0e]"></span>
+<span class="font-label-technical text-label-technical text-outline ml-1">+4 coloris</span>
+</div>
+<!-- Typography Stack -->
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight group-hover:text-primary transition-colors">
+            CHALLENGER 7 ENFANT
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Hybride du parc au sommet : gravier, herbe humide, bitume et terre meuble.
+          </p>
+</div>
+<!-- Metric Specs Strip & Price Action -->
+<div class="mt-space-md pt-space-sm">
+<div class="grid grid-cols-2 gap-2 py-space-xs font-label-technical text-label-technical text-on-surface uppercase mb-space-sm bg-surface-container-lowest/70 px-2 rounded">
+<div><span class="text-outline">POIDS :</span> 198g</div>
+<div><span class="text-outline">DROP:</span> 5.0mm</div>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">€100.00</span>
+</div>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-technical text-label-technical uppercase tracking-wider transition-colors">
+              Ajouter au panier
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Split Tactical Feature Focus: "CONÇU POUR JEUNES ACTIFS" -->
+<section class="w-full bg-surface-container-lowest py-space-xl px-margin-mobile lg:px-margin">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary font-bold">PROTECTION BIOMÉCANIQUE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight">
+            CONÇU POUR<br/>JEUNES ACTIFS
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Les enfants ne sont pas des adultes miniatures. Leur dynamique de foulée exige des densités de mousse proportionnées, un dégagement large des orteils et des zones d’abrasion indestructibles.
+        </p>
+</div>
+<!-- 3-Column Technology Highlight Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pillar 1 -->
+<div class="bg-surface-container rounded-lg p-space-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="mb-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[24px]">shield_with_heart</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight mb-space-xs">
+              AMORTI CROISSANCE
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              EVA moulé par compression ajusté avec un rebond 30 % plus souple pour réduire les chocs sur genoux et chevilles en développement en descente trail.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-technical text-label-technical text-outline uppercase">
+<span>ABSORPTION DES CHOCS</span>
+<span class="font-bold text-on-surface">+42 % DE COMPRESSION</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container rounded-lg p-space-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="mb-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[24px]">local_laundry_service</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight mb-space-xs">
+              ANTI-BOUE &amp; LAVABLE
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Tissage jacquard technique traité déperlant anti-salissures. Semelles OrthoLite® amovibles lavables en machine à 100 % en cycle froid alpin.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-technical text-label-technical text-outline uppercase">
+<span>ENTRETIEN DE LA TIGE</span>
+<span class="font-bold text-on-surface">RINÇAGE &amp; SÉCHAGE RAPIDES</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container rounded-lg p-space-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="mb-space-md">
+<div class="w-12 h-12 rounded-full bg-inverse-surface text-inverse-on-surface flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[24px]">sports_score</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight mb-space-xs">
+              GOMME DOUBLE NON MARQUANTE
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Semelles crantées en gomme adhérente haute friction qui passent des monotraces forestières aux sols de gymnase sans laisser de traces noires.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-technical text-label-technical text-outline uppercase">
+<span>SURFACE TESTÉE</span>
+<span class="font-bold text-on-surface">SANS TRACES EN SALLE</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Community & Real-World Trail Testing Section (Inspired by Social Gallery in Reference) -->
+<section class="w-full bg-surface py-space-xl px-margin-mobile lg:px-margin">
+<div class="max-w-[1440px] mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-bold">DÉFI WILD JUNIOR // #SHOEASYJUNIOR</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mt-1">
+            ON ADORE VOIR<br/>VOTRE STYLE TRAIL !
+          </h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs text-right hidden sm:block">
+            Taguez @SHOEASY_Athletics pour figurer au registre junior officiel de la montagne.
+          </p>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Previous image" class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+</button>
+<button aria-label="Next image" class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Mosaic Social Gallery -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Energetic young kid in colorful trail running apparel tying laces of vibrant HOKA trail sneakers while sitting on a rustic wooden alpine trail marker, warm outdoor sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyFKzw3gaeCdhZNdRRFHj7vKNaKOTFgPWCnhVlGgLUeqkBlUAV7m-a_xyshIpjask9zhMccXrtR6q4LNFysb0pcKrrXZX5_HfjAJjrNd7-UD2afCkw6pImJVvCdnGeeri8rpVhF1WbmEjkW6QdzOZScGl42CKLXoXSu7VU08UMo-hOkieM45FyGluFhRet_6K0FoAmuiV11Sy9nS9zQmwPG9GaUaPwEtRNi5fxyL7KT-PbSj3wu39P"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-technical text-label-technical uppercase tracking-wider opacity-80">CHAMONIX, FR</span>
+<span class="font-label-lg text-label-lg font-bold">Léo, 9 ans // Speedgoat 5</span>
+</div>
+</div>
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Young girl jumping over a mountain creek in colorful purple and cyan kids running shoes, water splashing, dynamic action shot with mountains in the background, sharp bright outdoor exposure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBhhz35qkqJekkRYP9Sjt5GfpvdvUFekJNgIascQahBZGgmryh4DefJpWTg9UqGBvYMzCHKgyOmS516go3AUMEyJ4NQfmo8ejAQNE-wPsu0A2pgHP4IDlCCEowYhJYdFdGmgvPUsIXRBoaoL8IAwuCYiuxXrlYjYU6xFuEgh8isNbMKwJp-ceeqbIgSsqbMBZhdrDiuhURxUnYPvtb79Ln0TC98KS2f5jQN-_FS4BnQSTCs8SYLDSs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-technical text-label-technical uppercase tracking-wider opacity-80">DOLOMITES, ITALIE</span>
+<span class="font-label-lg text-label-lg font-bold">Maya, 7 ans // Clifton 9 Jr</span>
+</div>
+</div>
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up overhead view of two pairs of muddy kids trail shoes standing on a wet rocky mountain path next to parent hiking boots, authentic trail adventure aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlV_96ybjrEK-563cTVIBha5ZCvAuobCVtyG3x23U9UehEMO8aX9pHVSIOLTmsP443qq7ylUp2laoshXuas1ttb-gXw6jY5OjuemWTcgwJ7uLmbTBvkczN5NKEdxxxNGNMAX7UmRajsd6AyE5AZQVMT707fjrrJSM7PpEpMJXFzMuWWURaY1iUyxOqM1CGmnFAZvsavbSktd6lEoQ9yuK7-07WA3JwcwCUJNGamT04rBtuYDlkHf9x"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-technical text-label-technical uppercase tracking-wider opacity-80">LAKE DISTRICT, ROYAUME-UNI</span>
+<span class="font-label-lg text-label-lg font-bold">La fratrie Bennett // Anacapa Low</span>
+</div>
+</div>
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Happy kid smiling with race medal around neck after finishing junior mountain trail race, wearing electric orange trail shoes and mud-splattered athletic shorts, golden hour natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDii2YW9hzEykCu4pyr24hNun-L5d-4Vi7j2W7hVXszZoP242cuTS3S_5zadWgBBUyD_D0bEIn_qoG1-fA3A6qEL8esNc53x6IryeJZl5DPP6hnkrsVRdoVHrkaqa9DkVEUoYZ4FiPvoPME3ctD5lAyGMqGh8BElueGi_udssGocBjN7L1GWRm0D9G5UK_8JcUBvWa_g1W0UYfQVby6E_y0pbjP2EqyTouE4lB4mY80fPi5bHZIm-93"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-surface-bright">
+<span class="font-label-technical text-label-technical uppercase tracking-wider opacity-80">COLORADO, ÉTATS-UNIS</span>
+<span class="font-label-lg text-label-lg font-bold">Sam, 11 ans // Challenger 7</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Parent Verified Review Callout Card (Inspired by Quote Card in Reference) -->
+<section class="w-full bg-surface px-margin-mobile lg:px-margin pb-space-xl">
+<div class="max-w-[1440px] mx-auto bg-surface-container-high rounded-lg p-space-lg lg:p-space-xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-space-lg shadow-sm">
+<div class="flex-1">
+<span class="font-display-xl text-display-xl leading-none text-secondary select-none font-bold block mb-space-xs">“</span>
+<blockquote class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-tight max-w-2xl">
+          Finally, a legitimate high-cushion trail shoe that doesn't blow through the toe cap in two weeks. My 8-year-old climbed 12km through rocky terrain without a single complaint or blister.
+        </blockquote>
+<div class="mt-space-md flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold font-label-lg">
+            EK
+          </div>
+<div>
+<p class="font-label-lg text-label-lg font-bold uppercase text-on-surface">ELENA K., ULTRA-MARATHONIENNE &amp; MAMAN</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acheteuse vérifiée // Innsbruck, Autriche</p>
+</div>
+</div>
+</div>
+<!-- Quick Durability Trust Badges -->
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm w-full lg:w-72">
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">verified</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold uppercase text-on-surface">GARANTIE CROISSANCE</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pointure dépassée en 60 jours ? 30 % de crédit pour la pointure suivante.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">recycling</span>
+<div>
+<p class="font-label-lg text-label-lg font-bold uppercase text-on-surface">REPRISE CIRCULAIRE</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rapportez les paires usagées pour ressemelage et don caritatif trail.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Modal: Kids Sizing & Foot Fit Calculator -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="size-guide-modal">
+<div class="bg-surface-container-lowest rounded-lg max-w-2xl w-full p-space-lg shadow-xl relative max-h-[90vh] overflow-y-auto">
+<!-- Close Button -->
+<button aria-label="Close dialog" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center" id="close-size-guide">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary font-bold">SYSTÈME D’AJUSTEMENT PRÉCIS</span>
+</div>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface tracking-tight mb-space-xs">
+        TROUVEZ LA BONNE POINTURE POUR LES PIEDS QUI GRANDISSENT
+      </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+        Les jeunes traileurs ont besoin d’environ 10mm à 12mm de dégagement devant les orteils pour descendre sans ongles meurtris.
+      </p>
+<!-- Interactive Ruler Selector -->
+<div class="bg-surface-container-low p-space-md rounded-lg mb-space-md">
+<label class="block font-label-technical text-label-technical uppercase tracking-wider text-on-surface mb-2 font-bold" for="foot-length-slider">
+          LONGUEUR DE PIED MESURÉE DE L’ENFANT (TALON À L’ORTEIL LE PLUS LONG) :
+        </label>
+<div class="flex items-center gap-space-md">
+<input class="w-full accent-primary-container cursor-pointer" id="foot-length-slider" max="25" min="16" step="0.5" type="range" value="19.5"/>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold min-w-[70px] text-right" id="foot-length-display">19.5 cm</span>
+</div>
+</div>
+<!-- Result Card -->
+<div class="grid grid-cols-3 gap-space-sm text-center mb-space-md">
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-label-technical text-label-technical text-outline uppercase block">UE RECOMMANDÉE</span>
+<span class="font-headline-md text-headline-md text-on-surface font-black" id="calc-eu">32</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-label-technical text-label-technical text-outline uppercase block">US JUNIOR</span>
+<span class="font-headline-md text-headline-md text-on-surface font-black" id="calc-us">1.5 Y</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<span class="font-label-technical text-label-technical text-outline uppercase block">MARGE DE CROISSANCE</span>
+<span class="font-headline-md text-headline-md text-secondary-container font-black">+11mm</span>
+</div>
+</div>
+<div class="flex justify-end gap-space-sm">
+<button class="h-11 px-space-lg rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-technical text-label-technical uppercase tracking-wider transition-colors" id="apply-filter-from-calc">
+          Voir les modèles en pointure EU 32
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Logic for Filtering & Calculator -->
+<script>
+    // Category Filter Buttons
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productItems = document.querySelectorAll('.product-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Toggle Active Styles
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-inverse-surface', 'text-inverse-on-surface', 'active-pill');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+        btn.classList.add('bg-inverse-surface', 'text-inverse-on-surface', 'active-pill');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+
+        const filter = btn.getAttribute('data-filter');
+
+        productItems.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Size Guide Modal Open/Close
+    const modal = document.getElementById('size-guide-modal');
+    const openBtn = document.getElementById('open-size-guide');
+    const closeBtn = document.getElementById('close-size-guide');
+    const applyBtn = document.getElementById('apply-filter-from-calc');
+
+    if (openBtn && modal) {
+      openBtn.addEventListener('click', () => modal.classList.remove('hidden'));
+    }
+    if (closeBtn && modal) {
+      closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+    }
+    if (applyBtn && modal) {
+      applyBtn.addEventListener('click', () => modal.classList.add('hidden'));
+    }
+
+    // Foot Length Interactive Calculator
+    const slider = document.getElementById('foot-length-slider');
+    const display = document.getElementById('foot-length-display');
+    const calcEu = document.getElementById('calc-eu');
+    const calcUs = document.getElementById('calc-us');
+
+    if (slider) {
+      slider.addEventListener('input', (e) => {
+        const val = parseFloat(e.target.value);
+        display.innerText = val.toFixed(1) + ' cm';
+
+        // Calculation approximate for kids trail fit (+10mm space)
+        let euSize = Math.round((val + 1.2) * 1.5);
+        if (euSize < 28) euSize = 28;
+        if (euSize > 39) euSize = 39;
+
+        calcEu.innerText = euSize;
+
+        // Approx US youth conversion
+        let usSize = (euSize - 30.5);
+        if (usSize <= 0) {
+          calcUs.innerText = (13 + usSize).toFixed(1) + ' K';
+        } else {
+          calcUs.innerText = usSize.toFixed(1) + ' Y';
+        }
+      });
+    }
+
+    // Scroll to collection on hero button click
+    const quickViewBtn = document.getElementById('quick-view-hero');
+    if (quickViewBtn) {
+      quickViewBtn.addEventListener('click', () => {
+        const grid = document.getElementById('collection-grid');
+        if (grid) grid.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-y-space-xl gap-x-gutter mb-space-xl"><div class="lg:col-span-4 flex flex-col pr-space-lg"><div class="flex items-center gap-space-xs mb-space-sm"><span class="font-headline-sm text-headline-sm tracking-tight uppercase text-on-surface font-extrabold">SHOEASY</span><span class="w-2 h-2 rounded-full bg-secondary-container"></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-md">Athlétisme de montagne technique et systèmes trail de précision. Né pour l’ultra-distance, le terrain alpin et la performance sans compromis.</p><div class="flex items-center gap-space-sm"><a aria-label="Explorer les flux" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">alternate_email</span></a><a aria-label="Archives visuelles" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Diffusions en direct" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a></div></div><div class="lg:col-span-2 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">MENU</h3><ul class="flex flex-col gap-space-sm font-label-lg text-label-lg"><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="best-deals" href="offres.html">Collection</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="men" href="homme.html">Produit</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="women" href="femme.html">Nouveauté</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="kids" href="enfants.html">Chaussure Swimrun</a></li></ul></div><div class="lg:col-span-2 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">SÉCURITÉ</h3><ul class="flex flex-col gap-space-sm font-label-lg text-label-lg"><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Conditions d’utilisation</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Politique de confidentialité</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Paramètres cookies</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Conformité</a></li></ul></div><div class="lg:col-span-4 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-sm font-bold">NEWSLETTER</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Recevez les sorties trail tactiques, les actus des séries de courses et les innovations du labo.</p><form class="flex flex-col sm:flex-row gap-space-xs items-stretch"><input class="flex-1 h-12 px-space-md rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Votre e-mail" type="email"/><button class="h-12 px-space-lg rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider transition-colors duration-150 flex items-center justify-center" type="button">ENVOYER</button></form></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Shoeasy, Inc. Tous droits réservés.</p><div class="flex items-center gap-space-md font-label-technical text-label-technical uppercase text-outline"><span>ALTIMETRY RIG // 45.9237° N, 6.8694° E</span><span>SHOEASY LAB V4.2</span></div></div></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/cart.js"></script>
+</body></html>

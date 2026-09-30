@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>SHOEASY | Accueil — Course Trail &amp; Montagne</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","on-primary-fixed-variant":"#003fa4","on-surface":"#131b2e","on-tertiary-fixed":"#261a00","on-tertiary-fixed-variant":"#5c4300","outline":"#727687","primary-container":"#f04323","on-background":"#131b2e","tertiary-fixed":"#ffdf9f","tertiary-container":"#916c00","primary-fixed-dim":"#b3c5ff","primary-fixed":"#dae1ff","on-primary-container":"#f8f7ff","on-tertiary":"#ffffff","on-error-container":"#93000a","on-secondary-fixed-variant":"#822700","surface-dim":"#e6e8eb","error-container":"#ffdad6","surface-container-low":"#f4f5f7","secondary-container":"#f04323","inverse-on-surface":"#eef0ff","on-primary-fixed":"#001849","background":"#ffffff","on-secondary-container":"#fffbff","surface-container-high":"#e6e8eb","tertiary":"#735500","on-primary":"#ffffff","on-secondary-fixed":"#390c00","tertiary-fixed-dim":"#f9bd22","surface-bright":"#ffffff","inverse-primary":"#b3c5ff","secondary":"#0c0d0e","surface-container-lowest":"#ffffff","outline-variant":"#c2c6d8","inverse-surface":"#283044","on-secondary":"#ffffff","surface":"#ffffff","on-error":"#ffffff","on-tertiary-container":"#fff7ee","secondary-fixed-dim":"#ffb59c","on-surface-variant":"#424656","primary":"#0c0d0e","surface-tint":"#0054d6","surface-container-highest":"#e6e8eb","secondary-fixed":"#ffdbcf","surface-variant":"#e6e8eb","surface-container":"#f4f5f7"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"1rem","space-md":"1rem","margin":"3rem","space-xl":"2.5rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg-mobile":["Helvetica Neue"],"headline-sm":["Helvetica Neue"],"display-xl-mobile":["Helvetica Neue"],"headline-md":["Helvetica Neue"],"headline-md-mobile":["Helvetica Neue"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Helvetica Neue"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-technical":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-xl":["Helvetica Neue"]},"fontSize":{"headline-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"700"}],"display-xl-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["32px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"700"}],"headline-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-technical":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"500"}],"display-xl":["72px",{"lineHeight":"76px","letterSpacing":"-0.03em","fontWeight":"800"}]}}}}</script>
+<style id="shoeasy-brand">
+  ::selection{background:#f04323;color:#fff}
+  h1,h2,h3,.font-brand-heading{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif!important;font-weight:800!important;text-transform:uppercase;letter-spacing:-0.015em!important}
+  h1{line-height:.95!important} h2{line-height:1!important}
+  .line-mask{display:block;overflow:hidden;padding-bottom:.08em}.line-mask>.ln{display:block;will-change:transform}
+  #cart-count{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#f04323;color:#fff;font-size:11px;font-weight:800;margin-left:6px}
+  .shoeasy-toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:#0c0d0e;color:#fff;padding:12px 18px;border-radius:999px;font-size:13px;font-weight:700;opacity:0;transition:.3s;z-index:9999}
+  .shoeasy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .shoeasy-topbar{position:sticky;top:0;z-index:50;background:#0c0d0e;color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em}
+  .shoeasy-topbar a{color:#fff;text-decoration:none}.shoeasy-topbar a:hover{color:#f04323}
+</style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+<div class="h-20 w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter">
+<div class="flex items-center gap-space-xl">
+<a class="flex items-center gap-space-xs" href="index.html" aria-current="page"><span class="font-headline-md text-headline-md tracking-tighter text-on-surface uppercase select-none">SHOEASY</span><span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1"></span></a>
+<nav class="hidden lg:flex items-center gap-space-lg">
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="femme.html">FEMME</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="homme.html">HOMME</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="enfants.html">ENFANTS</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="offres.html">MEILLEURES OFFRES</a>
+<a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" href="aide.html">AIDE</a>
+</nav>
+</div>
+<div class="flex items-center gap-space-md">
+<button aria-label="Recherche" class="p-space-xs text-on-surface hover:text-primary transition-colors hidden sm:flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[24px]">search</span></button>
+<button aria-label="Favoris" class="p-space-xs text-on-surface hover:text-secondary transition-colors hidden sm:flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[24px]">favorite</span></button>
+<a aria-label="Panier" class="p-space-xs text-on-surface hover:text-primary transition-colors relative flex items-center justify-center" href="panier.html"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span id="cart-count" class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container font-label-technical text-label-technical rounded-full h-5 min-w-[20px] px-1 flex items-center justify-center leading-none font-bold">0</span></a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+<div class="flex flex-col w-full">
+<section class="w-full bg-inverse-surface text-inverse-on-surface py-2 px-margin-mobile lg:px-margin overflow-hidden">
+<div class="max-w-[1440px] mx-auto flex items-center gap-space-lg whitespace-nowrap overflow-x-auto font-label-technical text-label-technical uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>MATRICE DE COURSE OFFICIELLE 2026</span>
+<span class="opacity-40">•</span><span>TESTÉ À CHAMONIX // ALT. +2 480M</span>
+<span class="opacity-40">•</span><span>VIBRAM® MEGAGRIP</span>
+<span class="opacity-40">•</span><span>LIVRAISON EXPRESS OFFERTE DÈS 120 €</span>
+</div>
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-md pb-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="hero-visual lg:col-span-8 rounded-2xl relative overflow-hidden flex flex-col justify-between p-space-md sm:p-space-lg min-h-[460px] lg:min-h-[560px] shadow-sm" style="background:#1b80e4 url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuJSDeVGUZsJU-LH_KPj5DHapA4xTzXk8lDRla0w3xmeLcNti9DW8cpAzvLF48sThSAsrMDH1IWUAeoRvdM3xwKO9SjbbCJ_eULDKR-sSPRfFjpqGtVKXRXJluE_dOinXeyxVQ85kcjXQIBCSqs0CSt8h99jAojR8kZs98PCHKL_UYUtPCwwdRuRATfL-nSg3d_A1PayNfVcDmsR0BZ8VS9bwhxiuWcFMbB-2-FQDgU9EZsvMBGra961QPx1n7x6RpjQ') center/cover no-repeat;">
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"></div>
+<div class="relative z-10 flex flex-wrap items-start justify-between gap-space-sm">
+<div class="max-w-xs bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 text-white">
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-white/80">LABO TRAIL TECHNIQUE</span>
+<p class="font-body-sm text-body-sm text-white/95 mt-1">Un produit d'exception pour l'EVO Mafate et la Mafate Speed.</p>
+</div>
+<span class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-technical text-label-technical uppercase font-bold shadow">NOUVEAUTÉ SS26</span>
+</div>
+<div class="relative z-10 flex items-center justify-center py-4">
+<div class="relative w-full max-w-[520px] flex items-center justify-center">
+<img alt="Sneaker SHOEASY Trail orange vif et cyan" class="hero-shoe w-[88%] drop-shadow-[0_35px_35px_rgba(0,0,0,0.35)]" src="assets/shoes1.png"/>
+<span class="absolute top-[6%] right-[10%] hidden sm:inline-flex bg-white/25 backdrop-blur-md text-white border border-white/40 text-[11px] font-bold px-3 py-1 rounded-full">Tige vegan haute</span>
+<span class="absolute bottom-[38%] left-[2%] hidden sm:inline-flex bg-white/25 backdrop-blur-md text-white border border-white/40 text-[11px] font-bold px-3 py-1 rounded-full">Mousse résiliente</span>
+<span class="absolute bottom-[14%] right-[22%] hidden sm:inline-flex bg-white/25 backdrop-blur-md text-white border border-white/40 text-[11px] font-bold px-3 py-1 rounded-full">Semelle PROFLY™+</span>
+</div>
+</div>
+<div class="relative z-10 flex items-end justify-between gap-space-sm flex-wrap">
+<div class="hero-rating flex items-center gap-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-full py-1.5 px-4 text-white shadow-md">
+<div class="flex -space-x-2">
+<img alt="Client 1" class="w-6 h-6 rounded-full border-2 border-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgKPdFuIW2L2kP0Sv4VD--PnUW9Z6Efy6hVqyx3Pt39raHwZmrTlccv7jQMRZugpLBMaCDJYzAQye4XEXlX9D3wuv8gh0GaL7Fk0M_q2C0zEXm4oQmC_F2TdxK-0fxSdigBWhdYfhk39g7ooc606bmqwPKaSfFfly_pjHYKCVXqfsFcDBW-GipVaPDSXTgujgGqf83-NTW32Tq14ZbIUPz8b8TGrJjvXkFHkiGLEWbARDrUSsrurAL"/>
+<img alt="Client 2" class="w-6 h-6 rounded-full border-2 border-white object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj3Dh9x1trgpMIvm7BSnkRyvYjJHW-jwo7B_-D6mYEpzfj8cJv3Zb5scG455hlz8tuSZVVHIBWkQL75AGzpgYBEVo_9MsIejPH_oK-iUrg97v-oRttKx_LYjdjC3aD1bjs9SuUt9_dGpmZox3UcR3LrDHhtciggZ_ynADUekmksKaVCN3rBL3c9Y9SpTvb5aMB5ySqfvNhcIouQVX4pK21f18bG9QZiTH5m4bFu3zpB_4CNoxAw1Br"/>
+</div>
+<span class="text-xs font-black"><span class="text-amber-300">★</span> 4,9/5</span>
+<span class="text-[11px] text-white/90 border-l border-white/30 pl-3">1,3k avis vérifiés</span>
+</div>
+<a class="inline-flex items-center gap-2 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider font-extrabold px-5 py-2.5 rounded-full hover:bg-surface-container-high transition-colors" href="homme.html">Explorer <span class="material-symbols-outlined text-[18px]">arrow_downward</span></a>
+</div>
+</div>
+<div class="hero-side lg:col-span-4 bg-inverse-surface text-inverse-on-surface rounded-2xl p-space-lg flex flex-col justify-between gap-space-md shadow-sm">
+<div>
+<p class="font-label-technical text-label-technical uppercase tracking-widest text-inverse-on-surface/70">SHOEASY — ENDURANCE ALPINE</p>
+<h1 class="font-display-xl text-display-xl uppercase text-inverse-on-surface mt-space-xs">MAFATE<br/>SPEED 4</h1>
+<div class="flex items-center gap-2 mt-space-sm">
+<span class="font-bold">4,9</span>
+<span class="flex text-amber-400 text-sm">★★★★★</span>
+<span class="font-body-sm text-body-sm text-inverse-on-surface/70">1,3k avis</span>
+</div>
+<p class="font-body-md text-body-md text-inverse-on-surface/80 mt-space-sm max-w-sm">Conçue pour les descentes techniques et l'endurance montagne 100 miles. Amorti PROFLY™+, crampons Vibram® 5,0 mm.</p>
+</div>
+<div class="grid grid-cols-3 gap-space-xs border-y border-white/15 py-space-sm">
+<div><p class="font-headline-sm text-headline-sm font-extrabold">5.0mm</p><p class="font-label-technical text-label-technical uppercase text-inverse-on-surface/60">CRAMPONS</p></div>
+<div><p class="font-headline-sm text-headline-sm font-extrabold">295g</p><p class="font-label-technical text-label-technical uppercase text-inverse-on-surface/60">POIDS</p></div>
+<div><p class="font-headline-sm text-headline-sm font-extrabold">4mm</p><p class="font-label-technical text-label-technical uppercase text-inverse-on-surface/60">DROP</p></div>
+</div>
+<div class="flex items-center justify-between gap-space-sm flex-wrap">
+<span class="font-headline-md text-headline-md font-extrabold">€180.00</span>
+<a class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase tracking-wider font-extrabold px-6 py-3 rounded-full hover:opacity-90 transition-opacity" href="homme.html">Commander <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pb-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<a class="px-4 py-2 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md uppercase tracking-wider font-bold" href="homme.html">TOUS LES MODÈLES</a>
+<a class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-high transition-colors" href="femme.html">FEMME</a>
+<a class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-high transition-colors" href="homme.html">HOMME</a>
+<a class="px-4 py-2 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-high transition-colors" href="enfants.html">ENFANTS</a>
+<a class="px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase tracking-wider font-bold hover:opacity-90 transition-opacity" href="offres.html">-40% ARCHIVES</a>
+</div>
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-lg">
+<div class="flex flex-wrap items-end justify-between gap-space-md mb-space-lg">
+<div>
+<p class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant">SÉLECTION DE LA SEMAINE</p>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-space-xs">CHOISISSEZ LA PAIRE PARFAITE</h2>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider font-extrabold text-primary hover:text-on-surface transition-colors" href="offres.html">Tout voir <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Carte Produit 1 : CHAUSSURE TRAIL -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">NOUVEAUTÉ</span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">TRAIL TECHNIQUE</span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span></button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Chaussure trail SHOEASY" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WclQfFCr1tjTClZRL20ctR8RTQMrof955zmvsRhuMC0YgauEQ2Nc7jzrBnuURzvTSP4fzaiI3Gt71I9rz-GplpcpYykSvvT2aeBMB0VVUE4mtHJiokFi58peYdEAE2HYBs57_ED1OtXXvBYjSiOkJgh89SgmviWk496QjZrryCn5EJHdNJmb-zYoWAqKLijJD1qfEKc5Ck3RdiU1LkJYNCRrJxx-0pcaKaylzgJgM5X41O5GRfqz00Zlw"/>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4,9</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(210)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">CHAUSSURE TRAIL</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Légère et accrocheuse pour vos premières sorties trail.</p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">39,00 €</span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span>AJOUTER AU PANIER</span></button>
+</div>
+</div>
+</div>
+<!-- Carte Produit 2 : CLARKS -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">MEILLEURE VENTE</span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">CONFORT QUOTIDIEN</span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span></button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Chaussure Clarks SHOEASY" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK-3VxL7BL3qWioIH9uB1tipb_N0znndhE8iP-AHKx4IT1vjXZisCLlc4kwftqqBfUAXExBU1ZBaSvnBkuFcfZIbLUFVC1IrEO3yIfC8my90HeBszYyLjmiP1eHBfVmf2OqRbl3t56X-jycYKTiiSwxxuClCbG9yqd-gEBc_jvt4Ie-eIX_Zql-uvrtadzf1VpkYiL_dgyyLU-OggerajRS6bJZIwDIqQ-64OvqdZjsFlnETNapdpAvpDkoISANPfoBQ"/>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4,8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(340)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">CLARKS</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Confort quotidien avec un style qui passe partout.</p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">56,99 €</span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span>AJOUTER AU PANIER</span></button>
+</div>
+</div>
+</div>
+<!-- Carte Produit 3 : WOLVERINE -->
+<div class="group bg-surface-container-low rounded-2xl p-space-md flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-high hover:shadow-xl">
+<div class="flex items-center justify-between w-full z-10">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-technical text-label-technical uppercase font-bold tracking-wider">ROBUSTE</span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-technical text-label-technical uppercase font-bold">TOUT-TERRAIN</span>
+</div>
+<button aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:text-secondary transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span></button>
+</div>
+<div class="relative w-full aspect-[4/3] my-space-sm flex items-center justify-center overflow-hidden">
+<img alt="Chaussure Wolverine SHOEASY" class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WJ-wIYmkMaE_e3hiV1qSkusRdHkX22Yn8mBHm-O7-seQV-4PiSY0a9V6M_Mq2wP6UcxYWXq2Fyv8svgo540OGR_amWqWfi91G4WmeCpnnSsKhejO4NXCAyfVNzELcOjJ-KC7UFS9x9kPkKAF4GJBMODgVRJRHt9CU5pQrvCwOXzphrNP-hUBtUyk65uRWbIRxPMGtUFCwDxN-EbmQhmdinlGLbvfRd2fC7CadEgXzEEFualagR43T5Qyc"/>
+</div>
+<div class="flex flex-col pt-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323] ring-1 ring-on-surface"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#131b2e]"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#f04323]"></span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-technical text-label-technical font-bold text-on-surface">4,7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(190)</span>
+</div>
+</div>
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-extrabold line-clamp-1">WOLVERINE</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Conçue pour durer sur les terrains les plus exigeants.</p>
+<div class="flex items-center justify-between pt-space-xs mt-auto">
+<span class="font-headline-sm text-headline-sm font-extrabold text-on-surface">43,77 €</span>
+<button class="h-10 px-space-md rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-md text-label-md uppercase tracking-wider transition-colors flex items-center gap-1.5" type="button"><span class="material-symbols-outlined text-[18px]">add_shopping_cart</span><span>AJOUTER AU PANIER</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pb-space-lg">
+<div class="bg-surface-container-low rounded-2xl px-space-lg py-space-md grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="flex flex-col items-center text-center gap-1 py-space-xs lg:border-r border-outline-variant"><span class="font-headline-md text-headline-md font-extrabold text-on-surface">5.0mm</span><span class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant">CRAMPONS VIBRAM®</span></div>
+<div class="flex flex-col items-center text-center gap-1 py-space-xs lg:border-r border-outline-variant"><span class="font-headline-md text-headline-md font-extrabold text-on-surface">295g</span><span class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant">POIDS PLUME</span></div>
+<div class="flex flex-col items-center text-center gap-1 py-space-xs lg:border-r border-outline-variant"><span class="font-headline-md text-headline-md font-extrabold text-on-surface">4mm</span><span class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant">DROP ÉQUILIBRÉ</span></div>
+<div class="flex flex-col items-center text-center gap-1 py-space-xs"><span class="font-headline-md text-headline-md font-extrabold text-on-surface">PROFLY™+</span><span class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant">AMORTI DOUBLE DENSITÉ</span></div>
+</div>
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="explore-photo lg:col-span-6 rounded-2xl overflow-hidden min-h-[320px] shadow-sm">
+<img alt="Confort et style sneaker en ville" class="w-full h-full object-cover min-h-[320px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu21RxD6o1tbC4a7x3irIcQMbBxknyBiohnUziLn2MHSTuR44vX9EhRVsR_0Q30CQ4NakDJET4uBTX3Nxt2h_RZ5ayLHtfE86T-L6degzh7dBQ7mS8yT1O05HY_VMHez8l1oNQWaWRMZzK6CJi74Sewo3IkW5sg96hB6hXJlTs2r1iiYBwh9JhLNyqs3LMGTmK81vsdm1BtwMQiKkrOegFgTUMq76SKbAQCdrCNAwYITGgjAtO_PqI"/>
+</div>
+<div class="lg:col-span-6 bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-center gap-space-md">
+<p class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant">POURQUOI SHOEASY</p>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">LE MEILLEUR DU CONFORT &amp; DU STYLE</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">Nous sommes l'un des plus grands détaillants familiaux de chaussures du pays, avec notre propre style, en ligne et parmi les plus populaires, et nous continuons à grandir dans le monde entier !</p>
+<ul class="flex flex-col gap-space-sm font-label-md text-label-md font-bold text-on-surface">
+<li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[18px]">group</span></span>Fonctionnalités centrées client</li>
+<li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[18px]">shopping_bag</span></span>Expérience d'achat sans souci</li>
+<li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[18px]">check</span></span>Ajustement parfait garanti</li>
+</ul>
+<div class="pt-space-xs"><a class="inline-flex items-center gap-2 bg-inverse-surface text-inverse-on-surface font-label-md text-label-md uppercase tracking-wider font-extrabold px-7 py-3.5 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors" href="offres.html">Acheter maintenant <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="lg:col-span-6 flex flex-col gap-space-sm">
+<div class="spot-main bg-surface-container-low rounded-2xl p-space-lg flex items-center justify-center aspect-[4/3]">
+<img alt="Paire SHOEASY Mafate Speed vue du dessus" class="w-[78%] h-auto object-contain drop-shadow-xl" src="https://lh3.googleusercontent.com/aida/AEtjO1X6uktwS9KSFaH2VUL2BInCIAjkPJqKTI5kVTbv2QyD5IImlnpqxxQH8wbc4HGIAmR-uZGg38P8xBNb2IaG2K8vVYrs3BBU7l9bMCp1JDoZWiP3rWPO33eG0o3ip9upzROX8I41tlyZNYt_qvRMjnFjNMPeNAkd46oH6BWPQ9GmLl55VXxOdYzjmAWO1SgID1hkLrZuBlk2FgYp9m6hYAdchZkBLsP3pQrsdaBaQl-fk1TmxYnD1XhZVQ"/>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<button class="thumb bg-surface-container-low rounded-xl p-3 flex items-center justify-center aspect-square border-2 border-on-surface" type="button"><img alt="Angle 1" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WclQfFCr1tjTClZRL20ctR8RTQMrof955zmvsRhuMC0YgauEQ2Nc7jzrBnuURzvTSP4fzaiI3Gt71I9rz-GplpcpYykSvvT2aeBMB0VVUE4mtHJiokFi58peYdEAE2HYBs57_ED1OtXXvBYjSiOkJgh89SgmviWk496QjZrryCn5EJHdNJmb-zYoWAqKLijJD1qfEKc5Ck3RdiU1LkJYNCRrJxx-0pcaKaylzgJgM5X41O5GRfqz00Zlw"/></button>
+<button class="thumb bg-surface-container-low rounded-xl p-3 flex items-center justify-center aspect-square border border-transparent hover:border-outline transition" type="button"><img alt="Angle 2" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYtuHFIRqig4PHXr2RASD0Amwzo69LfxyqJWj7O0hPWzEb06VlYcpW_r8BItD7_S9rGQjU0Jbqktn2EcH9cdZFOuH1X6u5J0dycpikC6g_UYm_06ZxlhKoj0QoSKDs9dfRZCVKXDv9Sr55FxNhtin6gbZWh1tGgOcdp99K2LuLZJoNp7feUeQ918S8dwt4VQeTphWbqnGEnnLievvMXjyYWwHEbi9bLeYoxN3voz8Rbl5Xxgexx9FKnq0xo-Qx34-sGA"/></button>
+<button class="thumb bg-surface-container-low rounded-xl p-3 flex items-center justify-center aspect-square border border-transparent hover:border-outline transition" type="button"><img alt="Angle 3" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WJ-wIYmkMaE_e3hiV1qSkusRdHkX22Yn8mBHm-O7-seQV-4PiSY0a9V6M_Mq2wP6UcxYWXq2Fyv8svgo540OGR_amWqWfi91G4WmeCpnnSsKhejO4NXCAyfVNzELcOjJ-KC7UFS9x9kPkKAF4GJBMODgVRJRHt9CU5pQrvCwOXzphrNP-hUBtUyk65uRWbIRxPMGtUFCwDxN-EbmQhmdinlGLbvfRd2fC7CadEgXzEEFualagR43T5Qyc"/></button>
+</div>
+</div>
+<div class="spot-info lg:col-span-6 bg-surface-container-lowest rounded-2xl border border-outline-variant p-space-lg flex flex-col gap-space-md">
+<div>
+<p class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant">PRODUIT EN VEDETTE</p>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-space-xs">SHOEASY MAFATE SPEED HOMME</h2>
+<div class="flex items-center gap-2 mt-space-sm">
+<span class="font-bold">4,9</span>
+<span class="flex text-amber-400 text-sm">★★★★★</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1,3k avis</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-sm max-w-md">Un produit d'exception pour le trail technique, la Mafate Speed 4 fait ses débuts, en condensant le meilleur de l'EVO Mafate et de la Mafate Speed.</p>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Taille &amp; Couleur</span>
+<div class="flex items-center gap-2.5 mt-space-xs">
+<button aria-label="Noir" class="pop w-6 h-6 rounded-full bg-black ring-2 ring-offset-2 ring-on-surface" type="button"></button>
+<button aria-label="Orange" class="pop w-6 h-6 rounded-full bg-[#f04323]" type="button"></button>
+<button aria-label="Sarcelle" class="pop w-6 h-6 rounded-full bg-[#00a887]" type="button"></button>
+<button aria-label="Bleu" class="pop w-6 h-6 rounded-full bg-[#1e88e5]" type="button"></button>
+</div>
+</div>
+<div>
+<span class="font-label-technical text-label-technical uppercase text-on-surface-variant">Taille</span>
+<div class="flex items-center gap-2 mt-space-xs flex-wrap">
+<button class="pop h-11 min-w-[44px] px-3 rounded-lg border border-outline text-on-surface font-label-md text-label-md font-bold hover:border-on-surface transition" type="button">8.5</button>
+<button class="pop h-11 min-w-[44px] px-3 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md font-bold" type="button">11.5</button>
+<button class="pop h-11 min-w-[44px] px-3 rounded-lg border border-outline text-on-surface font-label-md text-label-md font-bold hover:border-on-surface transition" type="button">12.5</button>
+<button class="pop h-11 min-w-[44px] px-3 rounded-lg border border-outline text-on-surface font-label-md text-label-md font-bold hover:border-on-surface transition" type="button">14</button>
+<button class="pop h-11 min-w-[44px] px-3 rounded-lg border border-outline text-on-surface font-label-md text-label-md font-bold hover:border-on-surface transition" type="button">15.5</button>
+</div>
+</div>
+<div class="pt-space-xs mt-auto">
+<span class="font-label-technical text-label-technical uppercase text-on-surface-variant">Prix</span>
+<div class="font-headline-lg text-headline-lg font-extrabold text-on-surface mb-space-sm">59,99 €</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 h-14 bg-inverse-surface hover:bg-primary-container hover:text-on-primary-container text-inverse-on-surface font-label-md text-label-md uppercase tracking-wider font-extrabold px-6 rounded-full transition-colors" type="button">AJOUTER AU PANIER</button>
+<button aria-label="Ajouter aux favoris" class="w-14 h-14 border border-outline rounded-full flex items-center justify-center text-on-surface hover:border-on-surface transition" type="button"><span class="material-symbols-outlined text-[20px]">favorite</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-lg">
+<div class="flex flex-wrap items-end justify-between gap-space-md mb-space-lg">
+<div>
+<p class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface-variant">ILS COURENT AVEC NOUS</p>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-space-xs">SATISFACTION CLIENT</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Avis précédent" class="w-11 h-11 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container-low transition" type="button"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button>
+<button aria-label="Avis suivant" class="w-11 h-11 rounded-full border border-outline flex items-center justify-center hover:bg-surface-container-low transition" type="button"><span class="material-symbols-outlined text-[20px]">arrow_forward</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="testi-photo lg:col-span-7 rounded-2xl overflow-hidden min-h-[300px] shadow-sm">
+<img alt="Cliente portant des chaussures stylées en extérieur" class="w-full h-full object-cover object-top min-h-[300px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcY-rg4RUoLCwLVjsoFkQE8om0j4MarUddyWtKP5bVRt1VmR33rHQuCNmpladsz_PkWpC-Q6t7_nLkdy7cRR-oj2pSthIyvTeR3zF8g_NvQE30XS-yxSiV3tSmAt7njkXr2g2yMBLv7WD6nL3KQXP4dGfstemd2Uat2SbD1OD7D3v6CoqcpWJy93koMfuSbQHy5IUEQ4xiSg3lJ_fiuoPeNT4zlxRwbH4_z87vI4Z2DpVlwjo8bTEb"/>
+</div>
+<div class="testi-text lg:col-span-5 bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between gap-space-md">
+<div>
+<span class="font-headline-lg text-headline-lg font-extrabold text-secondary-container">“</span>
+<p class="font-body-lg text-body-lg text-on-surface">J'adore les chaussures que j'ai achetées sur ce site ! Le design est tendance et le confort est inégalé. Je peux les porter toute la journée sans aucune gêne. Le site a rendu mes achats faciles et la livraison rapide a été une agréable surprise !</p>
+</div>
+<p class="font-label-md text-label-md uppercase tracking-wider font-bold text-on-surface">Sarah T. — New York</p>
+</div>
+</div>
+</section>
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-lg">
+<div class="flex flex-wrap items-end justify-between gap-space-md mb-space-lg">
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">ON ADORE VOIR VOTRE STYLE !</h2>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider font-extrabold text-primary hover:text-on-surface transition-colors" href="femme.html">Explorer <span class="material-symbols-outlined text-[18px]">arrow_forward</span></a>
+</div>
+<div class="gallery grid grid-cols-1 sm:grid-cols-3 gap-gutter">
+<a href="homme.html" class="rounded-2xl overflow-hidden aspect-[3/4] bg-surface-container-low block"><img alt="Skateur avec chaussettes hautes et sneaker orange" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUn6SPITUjUjwowggkHrsIvgjGrGo-0xTtzo10Yh7GdJmw-IbLkibjcXxvB4En4VVYRnjrlfntIF1f5-YYMzq2TRps081GZVBlE9aUm_5V55FqWi7OknwJ_OC-GyO9uilozPZWIGKYZ72DrV8TN8YNStHl1XpMpFB2ShqkZlykyP7QYZt7BRQlDoPcsCOsKaBJ9IOyITOhV-Jkfbz0YcZOIdKaTYP-X7tUoZC2rruAz3UDPauFysV9"/></a>
+<a href="femme.html" class="rounded-2xl overflow-hidden aspect-[3/4] bg-surface-container-low block"><img alt="Personne en sneakers blanches de sport" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6uM8nC6UIvwUGentH_BbuXLlL9vGe2-ShB1vVQW9GnRs96uogj0tNXM8boIK5Pf05X2JYQocvKdSHJcq5NTH2cOeEox2FUrDVuNVdECwcMq_s79798BsqV2kbRECVmalOnNZRAioBJkeTpAJ0TlQAxkjmXUJ9O7Ox8jScplz_JVH8RIRkYla1PlqqHAdAtiBS0gxXAoqAXJzpHwJVJpYLAONnJKKUPG9oA1wjfKdObClGiMZVf7nj"/></a>
+<a href="enfants.html" class="rounded-2xl overflow-hidden aspect-[3/4] bg-surface-container-low block"><img alt="Coureur laçant sa chaussure bleue et orange" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAq4L95jBrk-KWd2eM0sLx3jUTYw_wkbCLhz364jg40alerwxkI2AnLzap9K_fQUo6bENf1JJlm7Y62g_h3Sd1gmKuwpeRTPE09OHpnhgpfPzFwlDlItc4j1xRaHdaf4WOwTBEgSEo8Db-voLkQFHnGVEc3cG8ICsg3KlBwbzgW3_884H0Vstjcv8jkNLIHZ9iuehAOE__gxJQ7RsY1qgDea6OtxpuNOVkhS9Uaxen3zZPlldB6Ek8"/></a>
+</div>
+</section>
+</div>
+</main>
+<footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_8px_rgba(0,0,0,0.02)]">
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-y-space-xl gap-x-gutter mb-space-xl">
+<div class="lg:col-span-4 flex flex-col pr-space-lg">
+<div class="flex items-center gap-space-xs mb-space-sm"><span class="font-headline-sm text-headline-sm tracking-tight uppercase text-on-surface font-extrabold">SHOEASY</span><span class="w-2 h-2 rounded-full bg-secondary-container"></span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-md">En vous inscrivant par SMS, vous acceptez de recevoir des messages promotionnels et marketing personnalisés de Shoeasy au numéro utilisé lors de l'inscription.</p>
+<div class="flex items-center gap-space-sm">
+<a aria-label="X Twitter" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="font-bold text-sm">X</span></a>
+<a aria-label="Instagram" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a>
+</div>
+</div>
+<div class="lg:col-span-2 flex flex-col">
+<h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">Menu</h3>
+<ul class="flex flex-col gap-space-sm font-label-lg text-label-lg">
+<li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" href="homme.html">Collection</a></li>
+<li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" href="homme.html">Produit</a></li>
+<li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" href="offres.html">Nouveautés</a></li>
+<li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" href="femme.html">Chaussure Swimrun</a></li>
+<li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" href="panier.html">Panier</a></li>
+<li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" href="aide.html">Aide &amp; FAQ</a></li>
+</ul>
+</div>
+<div class="lg:col-span-2 flex flex-col">
+<h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">Sécurité</h3>
+<ul class="flex flex-col gap-space-sm font-label-lg text-label-lg">
+<li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" href="aide.html">Conditions d'utilisation</a></li>
+<li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" href="aide.html">Politique de confidentialité</a></li>
+</ul>
+</div>
+<div class="lg:col-span-4 flex flex-col">
+<h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">Inscription à la newsletter</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Restez informé de nos dernières nouveautés et conseils voyage.</p>
+<form class="flex items-center gap-space-xs" onsubmit="event.preventDefault();">
+<input class="bg-surface-container border-0 rounded-lg px-3.5 py-2.5 font-body-sm text-body-sm flex-1 focus:ring-1 focus:ring-primary outline-none" placeholder="Votre adresse e-mail" type="email"/>
+<button class="bg-inverse-surface hover:bg-primary-container hover:text-on-primary-container text-inverse-on-surface font-label-md text-label-md font-bold uppercase tracking-wider px-4 py-2.5 rounded-lg transition-colors" type="submit">Envoyer</button>
+</form>
+</div>
+</div>
+<div class="border-t border-outline-variant pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div>© 2026 Shoeasy, Inc.</div>
+<div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" href="aide.html">Politique de confidentialité</a><a class="hover:text-on-surface transition-colors" href="aide.html">Conditions d'utilisation</a></div>
+</div>
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+document.fonts.ready.then(() => {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches || !window.gsap) return;
+  gsap.registerPlugin(ScrollTrigger);
+  const $ = gsap.utils.toArray;
+
+  gsap.from('header', { y: -70, autoAlpha: 0, duration: 0.7, ease: 'power3.out' });
+  gsap.from('.hero-visual', { autoAlpha: 0, y: 40, scale: 0.98, duration: 0.9, ease: 'power3.out', delay: 0.15 });
+  gsap.from('.hero-side', { autoAlpha: 0, x: 60, duration: 0.9, ease: 'power3.out', delay: 0.25 });
+
+  const shoe = document.querySelector('.hero-shoe');
+  if (shoe) {
+    gsap.set(shoe, { rotation: -22 });
+    gsap.from(shoe, { rotation: -50, y: 120, x: -80, autoAlpha: 0, duration: 1.3, ease: 'back.out(1.4)', delay: 0.35 });
+    gsap.to(shoe, { y: -14, duration: 2.4, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 1.6 });
+    shoe.addEventListener('mouseenter', () => gsap.to(shoe, { rotation: -18, scale: 1.04, duration: 0.5, overwrite: 'auto' }));
+    shoe.addEventListener('mouseleave', () => gsap.to(shoe, { rotation: -22, scale: 1, duration: 0.5, overwrite: 'auto' }));
+    gsap.to(shoe, { yPercent: 10, ease: 'none', scrollTrigger: { trigger: '.hero-visual', start: 'top top', end: 'bottom top', scrub: true } });
+  }
+  gsap.from('.hero-visual .absolute, .hero-rating', { scale: 0.6, autoAlpha: 0, stagger: 0.1, duration: 0.5, ease: 'back.out(2)', delay: 0.9 });
+
+  $('main h2').forEach((h) => {
+    gsap.from(h, { y: 34, autoAlpha: 0, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: h, start: 'top 88%' } });
+  });
+  $('main section').forEach((s) => {
+    const cards = s.querySelectorAll('.group');
+    if (cards.length) {
+      gsap.from(cards, { y: 70, autoAlpha: 0, duration: 0.9, stagger: 0.15, ease: 'power3.out', scrollTrigger: { trigger: s, start: 'top 80%' } });
+    }
+  });
+  gsap.from('.explore-photo img, .testi-photo img', { scale: 1.2, duration: 1.5, ease: 'power3.out', stagger: 0.1, scrollTrigger: { trigger: '.explore-photo', start: 'top 85%' } });
+  gsap.from('.spot-main', { autoAlpha: 0, scale: 0.92, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: '.spot-main', start: 'top 80%' } });
+  gsap.from('.gallery > a', { y: 90, autoAlpha: 0, scale: 0.94, duration: 1, stagger: 0.15, ease: 'power3.out', scrollTrigger: { trigger: '.gallery', start: 'top 85%' } });
+  gsap.from('footer > div > div', { y: 30, autoAlpha: 0, stagger: 0.08, duration: 0.7, scrollTrigger: { trigger: 'footer', start: 'top 90%' } });
+
+  document.querySelectorAll('.pop').forEach((b) => {
+    b.addEventListener('mouseenter', () => gsap.to(b, { scale: 1.12, duration: 0.25 }));
+    b.addEventListener('mouseleave', () => gsap.to(b, { scale: 1, duration: 0.25 }));
+  });
+  document.querySelectorAll('.thumb').forEach((th) => {
+    th.addEventListener('click', () => {
+      document.querySelectorAll('.thumb').forEach((o) => o.classList.remove('border-on-surface'));
+      th.classList.add('border-on-surface');
+      const main = document.querySelector('.spot-main img');
+      const im = th.querySelector('img');
+      if (main && im) {
+        main.src = im.src;
+        gsap.fromTo(main, { scale: 0.9, autoAlpha: 0.4 }, { scale: 1, autoAlpha: 1, duration: 0.5, ease: 'power3.out' });
+      }
+    });
+  });
+});
+</script>
+<script src="assets/cart.js"></script>
+</body>
+</html>

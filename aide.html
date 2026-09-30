@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>SHOEASY | Course Trail &amp; Montagne</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","on-primary-fixed-variant":"#003fa4","on-surface":"#131b2e","on-tertiary-fixed":"#261a00","on-tertiary-fixed-variant":"#5c4300","outline":"#727687","primary-container":"#f04323","on-background":"#131b2e","tertiary-fixed":"#ffdf9f","tertiary-container":"#916c00","primary-fixed-dim":"#b3c5ff","primary-fixed":"#dae1ff","on-primary-container":"#f8f7ff","on-tertiary":"#ffffff","on-error-container":"#93000a","on-secondary-fixed-variant":"#822700","surface-dim":"#e6e8eb","error-container":"#ffdad6","surface-container-low":"#f4f5f7","secondary-container":"#f04323","inverse-on-surface":"#eef0ff","on-primary-fixed":"#001849","background":"#ffffff","on-secondary-container":"#fffbff","surface-container-high":"#e6e8eb","tertiary":"#735500","on-primary":"#ffffff","on-secondary-fixed":"#390c00","tertiary-fixed-dim":"#f9bd22","surface-bright":"#ffffff","inverse-primary":"#b3c5ff","secondary":"#0c0d0e","surface-container-lowest":"#ffffff","outline-variant":"#c2c6d8","inverse-surface":"#283044","on-secondary":"#ffffff","surface":"#ffffff","on-error":"#ffffff","on-tertiary-container":"#fff7ee","secondary-fixed-dim":"#ffb59c","on-surface-variant":"#424656","primary":"#0c0d0e","surface-tint":"#0054d6","surface-container-highest":"#e6e8eb","secondary-fixed":"#ffdbcf","surface-variant":"#e6e8eb","surface-container":"#f4f5f7"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-mobile":"1rem","space-md":"1rem","margin":"3rem","space-xl":"2.5rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-lg-mobile":["Helvetica Neue"],"headline-sm":["Helvetica Neue"],"display-xl-mobile":["Helvetica Neue"],"headline-md":["Helvetica Neue"],"headline-md-mobile":["Helvetica Neue"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Helvetica Neue"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-technical":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-xl":["Helvetica Neue"]},"fontSize":{"headline-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"700"}],"display-xl-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-md":["32px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"800"}],"headline-md-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"700"}],"headline-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-technical":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"500"}],"display-xl":["72px",{"lineHeight":"76px","letterSpacing":"-0.03em","fontWeight":"800"}]}}}}</script>
+<style id="shoeasy-brand">
+  ::selection{background:#f04323;color:#fff}
+  h1,h2,h3,.font-brand-heading{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif!important;font-weight:800!important;text-transform:uppercase;letter-spacing:-0.015em!important}
+  h1{line-height:.95!important} h2{line-height:1!important}
+  .line-mask{display:block;overflow:hidden;padding-bottom:.08em}.line-mask>.ln{display:block;will-change:transform}
+  #cart-count{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#f04323;color:#fff;font-size:11px;font-weight:800;margin-left:6px}
+  .shoeasy-toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(20px);background:#0c0d0e;color:#fff;padding:12px 18px;border-radius:999px;font-size:13px;font-weight:700;opacity:0;transition:.3s;z-index:9999}
+  .shoeasy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .shoeasy-topbar{position:sticky;top:0;z-index:50;background:#0c0d0e;color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em}
+  .shoeasy-topbar a{color:#fff;text-decoration:none}.shoeasy-topbar a:hover{color:#f04323}
+</style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-xs" data-path="women" href="index.html"><span class="font-headline-md text-headline-md tracking-tighter text-on-surface uppercase select-none">SHOEASY</span><span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-1"></span></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-on-surface font-bold"><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="women" href="femme.html">FEMME</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="men" href="homme.html">HOMME</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="kids" href="enfants.html">ENFANTS</a><a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="best-deals" href="offres.html">MEILLEURES OFFRES</a><a aria-current="page" class="uppercase tracking-wider transition-colors py-space-xs text-on-surface font-bold" data-path="faq" href="aide.html">AIDE</a></nav></div><div class="flex items-center gap-space-md"><button aria-label="Rechercher des chaussures" class="p-space-xs text-on-surface hover:text-primary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[24px]">search</span></button><button aria-label="Favorites" class="p-space-xs text-on-surface hover:text-secondary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[24px]">favorite</span></button><a aria-label="Panier" class="p-space-xs text-on-surface hover:text-primary transition-colors relative flex items-center justify-center" data-path="cart" href="panier.html"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-container font-label-technical text-label-technical rounded-full h-5 min-w-[20px] px-1 flex items-center justify-center leading-none font-bold">2</span></a><span id="cart-count">0</span><div class="ml-space-xs pl-space-xs flex items-center"><img alt="Profil" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1XGse2ij7B7jR0PNG0vkyR1uLaUWmn5jJKzneg2_x56d14OxeiFiHjLy5pmCU9JFyjFfuL8X2vLVUsr0r2Gy9JLRKNuioxQ-n69WRDP7wJbgGniX-veoF7jiPzeck_prllw_ney_oj_ixHiJO8d7EVZfpG7eUTrs4DijRQWXSmXExovZ8Yo0C-akZT-3vFWbt7orKCMLAt5XkQbm8vR-Ctj0zDva0mgctaB9ODzA7wl_NjBkGvpPCwp5ODYe5HpddtdYSgixqhX"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Technical Breadcrumb & Meta Bar -->
+<section class="w-full bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-sm flex flex-wrap items-center justify-between gap-space-xs text-on-surface-variant font-label-technical text-label-technical tracking-widest uppercase">
+<div class="flex items-center gap-space-xs">
+<a class="hover:text-primary transition-colors" data-path="women" href="femme.html">LABOS SHOEASY</a>
+<span>/</span>
+<a class="text-on-surface font-bold" data-path="faq" href="aide.html">CENTRE D’AIDE &amp; ARCHIVES</a>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>ASSISTANCE EN LIGNE</span>
+<span class="hidden md:inline">LATENCE SYSTÈME // 14ms</span>
+<span class="hidden sm:inline">STATION ALTIMÉTRIQUE // BASE DE CHAMONIX</span>
+</div>
+</div>
+</section>
+<!-- Hero Header & High-Impact Search Bar -->
+<section class="w-full bg-surface relative overflow-hidden py-space-xl lg:py-24">
+<!-- Atmospheric subtle terrain contour background graphic -->
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<svg class="w-full h-full text-surface-container-highest" fill="none" preserveaspectratio="none" viewbox="0 0 1440 400">
+<path d="M0 240C240 180 480 320 720 230C960 140 1200 280 1440 210V400H0V240Z" fill="currentColor" fill-opacity="0.35"></path>
+<path d="M0 310C320 250 640 370 960 290C1200 230 1340 330 1440 300V400H0V310Z" fill="currentColor" fill-opacity="0.45"></path>
+</svg>
+</div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin relative z-10">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-technical text-label-technical uppercase tracking-widest mb-space-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+            Assistance performance officielle SHOEASY
+          </div>
+<h1 class="font-headline-lg text-headline-lg lg:font-display-xl lg:text-display-xl uppercase tracking-tighter text-on-surface">
+            QUESTIONS <br class="hidden sm:inline"/><span class="text-primary-container">FRÉQUENTES</span> &amp; ASSISTANCE
+          </h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Réponses immédiates sur la géométrie de l’équipement, la longévité des crampons Vibram® Megagrip, la logistique mondiale et notre garantie de satisfaction trail 30 jours.
+        </p>
+</div>
+<!-- Search Input System -->
+<div class="w-full max-w-4xl bg-surface-container-lowest rounded-full p-2 pl-6 shadow-md flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[28px]">search</span>
+<input class="flex-1 bg-transparent text-on-surface font-body-md text-body-md outline-none placeholder:text-outline py-2" id="faqSearchInput" placeholder="Rechercher : questions, commandes, pointures, specs…" type="text"/>
+<button class="hidden px-space-xs text-outline hover:text-on-surface transition-colors" id="clearSearchBtn" title="Clear search" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<button class="h-12 px-space-xl rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider transition-colors duration-150 flex items-center gap-2" onclick="filterFAQs()" type="button">
+<span>EXPLORER</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Quick Topic Chips -->
+<div class="flex flex-wrap items-center gap-space-xs mt-space-md">
+<span class="font-label-technical text-label-technical uppercase tracking-wider text-outline mr-2">REQUÊTES POPULAIRES :</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all" onclick="setQuickSearch('Trouver ma pointure')" type="button">
+          Trouver ma pointure
+        </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all" onclick="setQuickSearch('Suivre mon colis')" type="button">
+          Suivre mon colis
+        </button>
+<button class="px-3.5 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold transition-all" onclick="setQuickSearch('Garantie Trail 30 jours')" type="button">
+          Garantie Trail 30 jours
+        </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all" onclick="setQuickSearch('Procédure de retour')" type="button">
+          Procédure de retour
+        </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all" onclick="setQuickSearch('Drop &amp; hauteur de semelle')" type="button">
+          Drop &amp; hauteur de semelle
+        </button>
+</div>
+</div>
+</section>
+<!-- 4-Column Topic Category Grid -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary-container font-extrabold">CATÉGORIES // SECTION 01</span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface tracking-tight mt-1">EXPLORER PAR UNIVERS TRAIL</h2>
+</div>
+<span class="font-label-technical text-label-technical text-outline uppercase hidden sm:block">4 MODULES ACTIFS</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Category Card 1 -->
+<div class="group cursor-pointer bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full" onclick="filterCategory('orders')">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[26px]">local_shipping</span>
+</div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-outline">LOGISTIQUE &amp; EXPÉDITION</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mt-1 group-hover:text-primary transition-colors">Commandes &amp; Suivi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Liens de suivi en direct, rapidité d’expédition du hub de Chamonix, dédouanement et protocoles de livraison sur les sites de course alpins.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between text-on-surface font-label-lg text-label-lg">
+<span class="text-primary font-bold">9 Articles</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 2 -->
+<div class="group cursor-pointer bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full" onclick="filterCategory('sizing')">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[26px]">straighten</span>
+</div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-outline">ANATOMIE &amp; FORMES</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mt-1 group-hover:text-primary transition-colors">Guide des tailles &amp; Ajustement</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Gonflement de l’avant-pied sur ultras de 100 miles, plateformes standard vs larges, scan du volume du pied et changement de semelles.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between text-on-surface font-label-lg text-label-lg">
+<span class="text-primary font-bold">12 Articles</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 3 -->
+<div class="group cursor-pointer bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full" onclick="filterCategory('returns')">
+<div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors flex items-center justify-center text-secondary mb-space-md">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-bold">POLITIQUE &amp; GARANTIES</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mt-1 group-hover:text-secondary-container transition-colors">Retours &amp; Garantie</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Notre Garantie Trail 30 jours sans friction : salissez-les, courez sur les éboulis. Pas satisfait ? Retour sans questions.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between text-on-surface font-label-lg text-label-lg">
+<span class="text-secondary font-bold">7 Articles</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Category Card 4 -->
+<div class="group cursor-pointer bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between h-full" onclick="filterCategory('tech')">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[26px]">precision_manufacturing</span>
+</div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-outline">LABO &amp; DURABILITÉ</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mt-1 group-hover:text-primary transition-colors">Technologie &amp; Entretien</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Préservation des crampons Vibram® Megagrip, réactivation de la mousse supercritique, entretien de l’imperméabilité GORE-TEX et protocole de séchage.
+            </p>
+</div>
+<div class="mt-space-lg pt-space-sm flex items-center justify-between text-on-surface font-label-lg text-label-lg">
+<span class="text-primary font-bold">14 Articles</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Filter Tabs & FAQ Accordion Section -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Section Header with Category Tabs -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-extrabold">BASE DE CONNAISSANCES VÉRIFIÉE</span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface tracking-tight mt-1">RÉPONSES DÉTAILLÉES</h2>
+</div>
+<!-- Filter category buttons -->
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container-low p-1.5 rounded-full">
+<button class="category-tab px-4 py-2 rounded-full bg-on-surface text-surface font-label-technical text-label-technical uppercase tracking-wider transition-all" id="tab-all" onclick="filterCategory('all')" type="button">
+            TOUTES LES QUESTIONS (7)
+          </button>
+<button class="category-tab px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-technical text-label-technical uppercase tracking-wider transition-all" id="tab-sizing" onclick="filterCategory('sizing')" type="button">
+            TAILLES &amp; AJUSTEMENT
+          </button>
+<button class="category-tab px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-technical text-label-technical uppercase tracking-wider transition-all" id="tab-returns" onclick="filterCategory('returns')" type="button">
+            GARANTIE 30 JOURS
+          </button>
+<button class="category-tab px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-technical text-label-technical uppercase tracking-wider transition-all" id="tab-orders" onclick="filterCategory('orders')" type="button">
+            LIVRAISON &amp; EXPÉDITION
+          </button>
+<button class="category-tab px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-technical text-label-technical uppercase tracking-wider transition-all" id="tab-tech" onclick="filterCategory('tech')" type="button">
+            LABO ÉQUIPEMENT
+          </button>
+</div>
+</div>
+<!-- FAQ Accordion Container -->
+<div class="flex flex-col gap-space-md" id="faqList">
+<!-- FAQ 1: Mafate Speed vs Speedgoat -->
+<div class="faq-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-all" data-category="tech sizing" data-keywords="mafate speed speedgoat comparison differences trail cushion vibram megagrip lugs">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-technical text-label-technical font-extrabold text-on-surface shrink-0">01</span>
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary-container font-extrabold block">COMPARATIF PRODUITS</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Comment choisir entre la Mafate Speed et la Speedgoat ?</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface shrink-0 transition-transform duration-300 faq-icon">
+<span class="material-symbols-outlined text-[22px]">expand_more</span>
+</div>
+</button>
+<div class="faq-content hidden pt-space-lg mt-space-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+                  While both models excel in technical mountainous terrain, their underlying chassis architecture serves distinct athlete demands:
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md my-space-xs">
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-bold block mb-1">MAFATE SPEED 4</span>
+<p class="font-body-sm text-body-sm text-on-surface">Semelle intermédiaire PROFLY+™ double densité, plot dynamique réactif, crampons Vibram® Megagrip 5,0mm plus profonds à géométrie Traction Lug. Conçue pour les éboulis rocheux brutaux, les racines humides et les descentes agressives.</p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary font-bold block mb-1">SPEEDGOAT 5</span>
+<p class="font-body-sm text-body-sm text-on-surface">Mousse CMEVA légère simple densité avec crampons 4,0mm. Bourreau de travail montagnard quotidien très équilibré, légèrement plus léger, conçu pour les monotraces techniques vallonnées et les allures soutenues sur 100K.</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm">
+<strong>Recommandation :</strong> Si vous courez souvent au-dessus de la limite des arbres sur granite humide et raide et cherchez un rebond explosif, choisissez la <strong>Mafate Speed</strong>. Pour un amorti moelleux constant et de longues distances, choisissez la <strong>Speedgoat</strong>.
+                </p>
+</div>
+<div class="lg:col-span-4 bg-surface-container p-space-md rounded-xl flex flex-col items-center">
+<img class="w-full h-44 object-cover rounded-lg mb-space-xs" data-alt="Close up technical split view comparing the rugged rubber tread lug geometries of two alpine mountain trail running shoes on a slate rock pedestal with natural directional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx106uwhehoaO1WBkphIlNMTRWbsb993HMt_FOuY-AgpN-b3rZsh9wHmAw0fMhFINGnWqdbq3MDTnftxvdXGkWpCdks6NVxRWOEGOkj4Xga19JRSh-nUIHSUp6AwiIU7q4BQf8WuZqxOXmIy9K4h0MmQ2mdumflYG6AHSxFufgxiTRR1z5uJTUwBIUHvEPa4pXL4hhYdGwtDUs5NpAJKB9rnJMvqavF--omJVx9OFpU7fgBRk0mqIr"/>
+<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider text-center">ARCHITECTURE VIBRAM® CRAMPON TRACTION</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ 2: Garantie Trail 30 jours -->
+<div class="faq-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-all" data-category="returns" data-keywords="30-day trail guarantee policy trial worn dirty return refund exchange">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-label-technical text-label-technical font-extrabold shrink-0">02</span>
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-extrabold block">ENGAGEMENT TEST TRAIL</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Quelle est la politique Garantie Trail 30 jours de HOKA ?</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface shrink-0 transition-transform duration-300 faq-icon">
+<span class="material-symbols-outlined text-[22px]">expand_more</span>
+</div>
+</button>
+<div class="faq-content hidden pt-space-lg mt-space-md">
+<div class="flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md max-w-4xl">
+<p>
+                Nous pensons que des chaussures de montagne ne peuvent pas vraiment être évaluées sur la moquette d’un magasin. Notre <strong class="text-on-surface">Garantie Trail 30 jours</strong> vous permet d’emmener votre nouvel équipement sur de vrais sentiers, de gravir des crêtes et de courir en conditions alpines humides pendant 30 jours complets à compter de la livraison.
+              </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm my-space-xs">
+<div class="p-space-md bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2 mb-1 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span>Vraie boue autorisée</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Les chaussures n’ont PAS besoin d’être propres ni comme neuves. Poussière, boue et usure des sentiers sont acceptées à 100 %.</p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2 mb-1 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-primary text-[20px]">swap_horiz</span>
+<span>Échange complet ou remboursement</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Changez de pointure, choisissez un autre modèle ou recevez un remboursement complet immédiat sur votre carte de paiement.</p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2 mb-1 text-on-surface font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-primary text-[20px]">local_activity</span>
+<span>Étiquette prépayée gratuite</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">QR code numérique instantané ou étiquette imprimable générée via notre portail automatisé en 60 secondes.</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline">
+                *Guarantee applies to all purchases completed directly on SHOEASY.com or authorized flagship athletic locations.
+              </p>
+</div>
+</div>
+</div>
+<!-- FAQ 3: Standard Delivery Times & International Rates -->
+<div class="faq-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-all" data-category="orders" data-keywords="shipping standard delivery times international rates express customs europe us canada dispatch">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-technical text-label-technical font-extrabold text-on-surface shrink-0">03</span>
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary-container font-extrabold block">EXPÉDITION MONDIALE</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Quels sont les délais de livraison standards et les frais internationaux ?</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface shrink-0 transition-transform duration-300 faq-icon">
+<span class="material-symbols-outlined text-[22px]">expand_more</span>
+</div>
+</button>
+<div class="faq-content hidden pt-space-lg mt-space-md">
+<div class="flex flex-col gap-space-md text-on-surface-variant font-body-md text-body-md">
+<p>
+                All orders are processed and inspected at our high-altitude logistics terminal in Chamonix-Mont-Blanc, France, or secondary fulfillment nodes in Salt Lake City, UT and Munich, Germany.
+              </p>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-on-surface font-label-technical text-label-technical uppercase">
+<th class="p-3 rounded-l-lg">RÉGION</th>
+<th class="p-3">NIVEAU DE SERVICE</th>
+<th class="p-3">DÉLAI DE TRANSIT</th>
+<th class="p-3 rounded-r-lg">COÛT</th>
+</tr>
+</thead>
+<tbody class="divide-none">
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="p-3 font-bold text-on-surface">Union européenne &amp; Royaume-Uni</td>
+<td class="p-3">Express alpin terrestre</td>
+<td class="p-3">1 à 3 jours ouvrés</td>
+<td class="p-3 font-bold text-primary">OFFERTE dès 80 € (5,95 € forfaitaire)</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="p-3 font-bold text-on-surface">États-Unis &amp; Canada</td>
+<td class="p-3">Courrier prioritaire aérien</td>
+<td class="p-3">2 à 4 jours ouvrés</td>
+<td class="p-3 font-bold text-primary">OFFERTE dès 120 $ (9,99 $ forfaitaire)</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="p-3 font-bold text-on-surface">Japon, APAC &amp; Australasie</td>
+<td class="p-3">DHL Express mondial accéléré</td>
+<td class="p-3">3 à 5 jours ouvrés</td>
+<td class="p-3 font-bold text-on-surface">18,00 $ forfaitaire (taxes incluses)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="font-body-sm text-body-sm text-outline">
+                Toutes les expéditions internationales incluent douane et TVA prépayées (conditions DDP), garantissant zéro blocage frontalier ni frais de transporteur imprévus à l’arrivée.
+              </p>
+</div>
+</div>
+</div>
+<!-- FAQ 4: Muddy Run Shoe Care -->
+<div class="faq-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-all" data-category="tech" data-keywords="cleaning maintenance trail shoes muddy washing machine gore-tex dry foam">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-technical text-label-technical font-extrabold text-on-surface shrink-0">04</span>
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary-container font-extrabold block">ENTRETIEN DE L’ÉQUIPEMENT</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Comment nettoyer et entretenir mes chaussures de trail après des sorties boueuses ?</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface shrink-0 transition-transform duration-300 faq-icon">
+<span class="material-symbols-outlined text-[22px]">expand_more</span>
+</div>
+</button>
+<div class="faq-content hidden pt-space-lg mt-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter text-on-surface-variant font-body-md text-body-md">
+<div class="space-y-space-sm">
+<h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface font-extrabold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">thumb_up</span>
+                  CYCLE DE RÉCUPÉRATION RECOMMANDÉ
+                </h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li class="flex items-start gap-2">
+<span class="font-bold text-on-surface">1.</span>
+<span><strong>Sécher d’abord, brosser ensuite :</strong> Laissez les gros paquets de boue sécher naturellement à température ambiante. Une fois secs, détachez les mottes et brossez l’argile avec une brosse douce en crin ou en nylon.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-bold text-on-surface">2.</span>
+<span><strong>Bain tiède :</strong> Utilisez une éponge avec du liquide vaisselle doux écologique et de l’eau tiède (&lt;30°C). Nettoyez la tige en maille hydrophobe sans immerger complètement.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-bold text-on-surface">3.</span>
+<span><strong>Séchage à l’air avec du papier journal :</strong> Retirez la semelle Ortholite® et bourrez les chaussures de papier recyclé. Séchez dans un endroit ventilé à l’ombre.</span>
+</li>
+</ul>
+</div>
+<div class="bg-error-container/40 p-space-md rounded-xl space-y-space-xs">
+<h4 class="font-label-lg text-label-lg uppercase tracking-wider text-error font-extrabold flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">cancel</span>
+                  AVERTISSEMENTS IMPORTANTS
+                </h4>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong>Ne JAMAIS laver en machine ni sécher au sèche-linge :</strong> Machine agitators fracture the supercritical nitrogen-infused foam lattice and weaken midsole heat-welds. Excessive heat also delaminates Vibram® Megagrip outsole lugs and dissolves structural overlays.
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Évitez l’exposition directe au soleil et ne posez pas les chaussures sur un radiateur.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ 5: Shoe Drop & Biomechanics -->
+<div class="faq-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-all" data-category="tech sizing" data-keywords="shoe drop stack height 4mm 5mm posture biomechanics heel to toe achilles strike">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-technical text-label-technical font-extrabold text-on-surface shrink-0">05</span>
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary-container font-extrabold block">BIOMÉCANIQUE &amp; CARACTÉRISTIQUES</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Comment le drop (ex. 4mm vs 5mm) influence-t-il ma posture de course ?</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface shrink-0 transition-transform duration-300 faq-icon">
+<span class="material-symbols-outlined text-[22px]">expand_more</span>
+</div>
+</button>
+<div class="faq-content hidden pt-space-lg mt-space-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md">
+<p>
+<strong>Drop talon-orteils</strong> est la différence de hauteur entre l’appui de votre talon et celui de l’avant-pied dans le châssis de la chaussure.
+                </p>
+<p class="font-body-sm text-body-sm">
+                  Les chaussures SHOEASY utilisent délibérément un profil à drop bas (généralement <strong>4mm à 5mm</strong>) associé à notre <strong class="text-on-surface">géométrie Meta-Rocker brevetée</strong>. Cette conception répond à deux objectifs biomécaniques principaux :
+                </p>
+<ul class="space-y-1.5 font-body-sm text-body-sm">
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-2"></span>
+<span><strong>Frappe médio-pied naturelle :</strong> Le drop bas maintient le tendon d’Achille actif et sollicite les mollets, guidant naturellement votre posé sous votre centre de masse plutôt qu’en attaque talon lointaine.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container mt-2"></span>
+<span><strong>Montée &amp; agilité alpine :</strong> En gravissant des pentes à 25 % et plus, le drop bas permet une dorsiflexion complète de la cheville, évitant la fatigue prématurée des mollets et maximisant l’accroche des crampons sur le gravier meuble.</span>
+</li>
+</ul>
+</div>
+<!-- Mini SVG Diagram of Drop -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg rounded-xl flex flex-col items-center">
+<svg class="w-full text-on-surface" fill="none" viewbox="0 0 280 90">
+<!-- Ground line -->
+<line stroke="#727687" stroke-dasharray="4 4" stroke-width="2" x1="10" x2="270" y1="80" y2="80"></line>
+<!-- Shoe profile outline -->
+<path d="M20 70 Q50 78 90 78 L200 78 Q250 78 260 55 Q250 48 230 46 L170 42 Q140 28 110 32 L50 40 Q25 45 20 70 Z" fill="#E6E8EB" stroke="#0C0D0E" stroke-width="2"></path>
+<!-- Forefoot stack marker -->
+<line stroke="#F04323" stroke-width="2" x1="220" x2="220" y1="80" y2="55"></line>
+<text fill="#F04323" font-family="Plus Jakarta Sans" font-size="10" font-weight="700" x="225" y="70">29mm</text>
+<!-- Heel stack marker -->
+<line stroke="#0C0D0E" stroke-width="2" x1="50" x2="50" y1="80" y2="40"></line>
+<text fill="#0C0D0E" font-family="Plus Jakarta Sans" font-size="10" font-weight="700" x="55" y="60">33mm</text>
+<!-- Delta badge -->
+<rect fill="#131B2E" height="20" rx="10" width="60" x="110" y="5"></rect>
+<text fill="#FFFFFF" font-family="Helvetica Neue" font-size="10" font-weight="800" text-anchor="middle" x="140" y="19">Δ 4mm DROP</text>
+</svg>
+<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider mt-2">ANALYSE : TALON 33MM / AVANT-PIED 29MM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ 6: Ultra-distance Sizing & Foot Swelling -->
+<div class="faq-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-all" data-category="sizing" data-keywords="sizing fit swollen feet ultra marathon distance wide half size up">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-technical text-label-technical font-extrabold text-on-surface shrink-0">06</span>
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary-container font-extrabold block">PROTOCOLE D’AJUSTEMENT</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Faut-il prendre une demi-pointure au-dessus pour les ultras 50K et 100M ?</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface shrink-0 transition-transform duration-300 faq-icon">
+<span class="material-symbols-outlined text-[22px]">expand_more</span>
+</div>
+</button>
+<div class="faq-content hidden pt-space-lg mt-space-md">
+<div class="flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md max-w-4xl">
+<p>
+<strong>Oui, dans presque tous les scénarios d’ultra-distance.</strong> Lors d’efforts d’endurance soutenus au-delà de 4 heures continues, les déplacements de fluides biologiques et les impacts mécaniques écartent l’arche transverse et font gonfler le volume global du pied jusqu’à <strong>une pointure européenne complète (environ 4–6mm en longueur et en largeur)</strong>.
+              </p>
+<div class="p-space-md bg-surface-container-low rounded-lg">
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary font-bold block mb-1">LA RÈGLE DU POUCE POUR LES DESCENTES RAIDES</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Ensure a full thumb’s width (approx. 1.2 cm) of clearance between your longest toe and the reinforced TPU toe bumper when standing firmly laced. This prevents black toenails and subungual hematomas during aggressive continuous downhill mountain running.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ 7: GORE-TEX vs Non-GTX Drainage -->
+<div class="faq-item bg-surface-container-lowest rounded-xl p-space-lg shadow-sm transition-all" data-category="tech" data-keywords="gore-tex gtx waterproof breathable river crossing drainage snow wet">
+<button class="faq-toggle w-full flex items-center justify-between text-left gap-space-md" type="button">
+<div class="flex items-center gap-space-md">
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-label-technical text-label-technical font-extrabold text-on-surface shrink-0">07</span>
+<div>
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-primary-container font-extrabold block">MATRICE D’IMPERMÉABILITÉ</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Quand choisir GORE-TEX® plutôt que la maille à séchage rapide standard ?</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface shrink-0 transition-transform duration-300 faq-icon">
+<span class="material-symbols-outlined text-[22px]">expand_more</span>
+</div>
+</button>
+<div class="faq-content hidden pt-space-lg mt-space-md">
+<div class="flex flex-col gap-space-sm text-on-surface-variant font-body-md text-body-md max-w-4xl">
+<p>Choisissez<strong>GORE-TEX® Invisible Fit</strong> pour le trail hivernal, la neige damée froide, la pluie verglaçante et les sentiers boueux peu profonds où l’eau ne passe pas au-dessus du col de la chaussure.
+              </p>
+<p>Choisissez<strong>Maille hydrophobe standard</strong> si votre sortie trail comporte des traversées de rivière profondes ou une humidité tropicale estivale. Une fois immergée au-dessus de la cheville, une chaussure GORE-TEX retient l’eau comme un seau ; une maille standard l’évacue en 200 foulées via ses ports de drainage techniques.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty state if search finds nothing -->
+<div class="hidden py-space-xl text-center bg-surface-container-low rounded-xl mt-space-md" id="noResultsState">
+<span class="material-symbols-outlined text-[48px] text-outline mb-2">find_in_page</span>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">AUCUNE CORRESPONDANCE TROUVÉE</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mt-1 mb-space-md">
+          Nous n’avons trouvé aucune réponse correspondant à votre demande. Nos athlètes et techniciens en direct sont prêts à vous aider.
+        </p>
+<button class="h-10 px-space-lg rounded-full bg-primary text-on-primary font-label-technical text-label-technical uppercase tracking-wider" onclick="setQuickSearch('')" type="button">
+          RÉINITIALISER LES FILTRES
+        </button>
+</div>
+</div>
+</section>
+<!-- Technical Spec & Sizing Quick Matrix Banner -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-2xl p-space-lg lg:p-space-xl relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest/20 text-primary-fixed font-label-technical text-label-technical uppercase tracking-widest mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              OUTIL DE POINTURE NUMÉRIQUE INSTANTANÉ
+            </div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-white mb-space-xs">
+              BESOIN D’UNE POINTURE IMMÉDIATE ?
+            </h2>
+<p class="font-body-md text-body-md text-surface-variant max-w-xl mb-space-md">
+              Comparez vos mesures exactes de scan du pied (CM / JP) à nos formes anatomiques EU et US. Ne transigez jamais sur le dégagement des orteils avant votre course objectif.
+            </p>
+<div class="flex flex-wrap items-center gap-space-sm">
+<a class="h-12 px-space-lg rounded-full bg-primary-container text-on-primary-container hover:bg-on-primary hover:text-on-surface font-label-lg text-label-lg uppercase tracking-wider transition-colors inline-flex items-center gap-2" data-path="women" href="femme.html">
+<span>OUVRIR LE GUIDE DES POINTURES</span>
+<span class="material-symbols-outlined text-[18px]">straighten</span>
+</a>
+<a class="h-12 px-space-lg rounded-full bg-surface-container/20 text-white hover:bg-surface-container/30 font-label-lg text-label-lg uppercase tracking-wider transition-colors inline-flex items-center" data-path="men" href="homme.html">
+                TÉLÉCHARGER LE PÉDIMÈTRE IMPRIMABLE
+              </a>
+</div>
+</div>
+<div class="lg:col-span-5 grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-highest/10 p-space-md rounded-xl">
+<span class="font-headline-md text-headline-md text-secondary-fixed block">4.9 / 5</span>
+<span class="font-label-technical text-label-technical text-surface-variant uppercase tracking-wider">PRÉCISION D’AJUSTEMENT</span>
+</div>
+<div class="bg-surface-container-highest/10 p-space-md rounded-xl">
+<span class="font-headline-md text-headline-md text-primary-fixed block">&lt; 0.4%</span>
+<span class="font-label-technical text-label-technical text-surface-variant uppercase tracking-wider">TAUX D’ÉCHANGE DE POINTURE</span>
+</div>
+<div class="bg-surface-container-highest/10 p-space-md rounded-xl">
+<span class="font-headline-md text-headline-md text-white block">30 JOURS</span>
+<span class="font-label-technical text-label-technical text-surface-variant uppercase tracking-wider">ESSAI SANS RISQUE</span>
+</div>
+<div class="bg-surface-container-highest/10 p-space-md rounded-xl">
+<span class="font-headline-md text-headline-md text-tertiary-fixed block">100%</span>
+<span class="font-label-technical text-label-technical text-surface-variant uppercase tracking-wider">EMBALLAGE RECYCLÉ</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Contact Support Triad Banner -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-technical text-label-technical uppercase tracking-widest text-secondary font-extrabold">EXPÉDITION CHAMONIX</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mt-1">BESOIN D’AIDE ?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Notre équipe mondiale d’ultrarunners, de guides alpins et de chercheurs en biomécanique est prête à résoudre votre problème.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Live Chat Card -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between items-start">
+<div class="w-full">
+<div class="flex items-center justify-between w-full mb-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-technical text-label-technical font-bold uppercase">ACTIF 24/7</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">CHAT ATHLÈTE EN DIRECT</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Lien direct avec notre équipe équipement pour conseils chaussures, questions d’ajustement et envois urgents de course.
+            </p>
+</div>
+<div class="mt-space-lg w-full">
+<button class="w-full h-12 rounded-full bg-on-surface text-surface hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider transition-colors flex items-center justify-center gap-2" type="button">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span>DÉMARRER LE CHAT EN DIRECT</span>
+</button>
+<span class="font-label-technical text-label-technical text-outline text-center block mt-2">RÉPONSE MOY. : MOINS DE 60 SECONDES</span>
+</div>
+</div>
+<!-- Email Ticket Support -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between items-start">
+<div class="w-full">
+<div class="flex items-center justify-between w-full mb-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">mail</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-technical text-label-technical font-bold uppercase">ENVOI EN 2H</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">TICKETS PAR E-MAIL</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Idéal pour les demandes de garantie détaillées, les photos de colis endommagés ou les commandes groupées ultra-marathon.
+            </p>
+</div>
+<div class="mt-space-lg w-full">
+<a class="w-full h-12 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg uppercase tracking-wider transition-colors flex items-center justify-center gap-2" href="mailto:support@shoeasy-athletics.com">
+<span>ENVOYER UN TICKET ÉCRIT</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</a>
+<span class="font-label-technical text-label-technical text-outline text-center block mt-2">SUPPORT@SHOEASY-ATHLETICS.COM</span>
+</div>
+</div>
+<!-- Toll-Free Phone -->
+<div class="bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between items-start">
+<div class="w-full">
+<div class="flex items-center justify-between w-full mb-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">support_agent</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-technical text-label-technical font-bold uppercase">NUMÉRO VERT</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">HOTLINE GRATUITE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+              Échangez directement avec un spécialiste pour les changements de pointure ou les livraisons transcontinentales en cours.
+            </p>
+</div>
+<div class="mt-space-lg w-full">
+<a class="w-full h-12 rounded-full bg-secondary-container text-on-secondary-container hover:opacity-90 font-label-lg text-label-lg uppercase tracking-wider transition-opacity flex items-center justify-center gap-2" href="tel:18005558873">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>+1 (800) 555-SHOEASY</span>
+</a>
+<span class="font-label-technical text-label-technical text-outline text-center block mt-2">LUN–SAM : 06:00 – 20:00 CET</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Logic for FAQ Accordions and Real-Time Search -->
+<script>
+    // Accordion Toggle Logic
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.faq-item');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+        const isExpanded = !content.classList.contains('hidden');
+
+        // Close other items if desired or allow multi-expand
+        if (isExpanded) {
+          content.classList.add('hidden');
+          icon.classList.remove('rotate-180', 'bg-primary-container', 'text-on-primary-container');
+        } else {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180', 'bg-primary-container', 'text-on-primary-container');
+        }
+      });
+    });
+
+    // Real-Time Search & Category Filter System
+    let currentCategory = 'all';
+
+    function setQuickSearch(term) {
+      const searchInput = document.getElementById('faqSearchInput');
+      searchInput.value = term;
+      filterFAQs();
+      // Scroll smoothly to FAQs
+      document.getElementById('faqList').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      // Update Tab Visuals
+      document.querySelectorAll('.category-tab').forEach(tab => {
+        tab.classList.remove('bg-on-surface', 'text-surface');
+        tab.classList.add('text-on-surface-variant');
+      });
+      const activeTab = document.getElementById('tab-' + cat);
+      if (activeTab) {
+        activeTab.classList.add('bg-on-surface', 'text-surface');
+        activeTab.classList.remove('text-on-surface-variant');
+      }
+      filterFAQs();
+    }
+
+    function filterFAQs() {
+      const searchInput = document.getElementById('faqSearchInput');
+      const clearBtn = document.getElementById('clearSearchBtn');
+      const query = searchInput.value.toLowerCase().trim();
+      
+      if (query.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+
+      const items = document.querySelectorAll('.faq-item');
+      let visibleCount = 0;
+
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category') || '';
+        const itemKeywords = item.getAttribute('data-keywords') || '';
+        const textContent = item.innerText.toLowerCase();
+
+        const matchesCat = (currentCategory === 'all') || itemCat.includes(currentCategory);
+        const matchesQuery = query === '' || textContent.includes(query) || itemKeywords.includes(query);
+
+        if (matchesCat && matchesQuery) {
+          item.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      const noResults = document.getElementById('noResultsState');
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    }
+
+    // Bind real-time input
+    const inputEl = document.getElementById('faqSearchInput');
+    if (inputEl) {
+      inputEl.addEventListener('input', filterFAQs);
+    }
+
+    const clearBtn = document.getElementById('clearSearchBtn');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        inputEl.value = '';
+        filterFAQs();
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-y-space-xl gap-x-gutter mb-space-xl"><div class="lg:col-span-4 flex flex-col pr-space-lg"><div class="flex items-center gap-space-xs mb-space-sm"><span class="font-headline-sm text-headline-sm tracking-tight uppercase text-on-surface font-extrabold">SHOEASY</span><span class="w-2 h-2 rounded-full bg-secondary-container"></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-md">Athlétisme de montagne technique et systèmes trail de précision. Né pour l’ultra-distance, le terrain alpin et la performance sans compromis.</p><div class="flex items-center gap-space-sm"><a aria-label="Explorer les flux" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">alternate_email</span></a><a aria-label="Archives visuelles" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Diffusions en direct" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a></div></div><div class="lg:col-span-2 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">MENU</h3><ul class="flex flex-col gap-space-sm font-label-lg text-label-lg"><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="best-deals" href="offres.html">Collection</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="men" href="homme.html">Produit</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="women" href="femme.html">Nouveauté</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="kids" href="enfants.html">Chaussure Swimrun</a></li></ul></div><div class="lg:col-span-2 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-md font-bold">SÉCURITÉ</h3><ul class="flex flex-col gap-space-sm font-label-lg text-label-lg"><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Conditions d’utilisation</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Politique de confidentialité</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Paramètres cookies</a></li><li class="leading-none"><a class="text-on-surface-variant hover:text-on-surface transition-colors block py-0.5" data-path="faq" href="aide.html">Conformité</a></li></ul></div><div class="lg:col-span-4 flex flex-col"><h3 class="font-label-technical text-label-technical uppercase tracking-widest text-on-surface mb-space-sm font-bold">NEWSLETTER</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Recevez les sorties trail tactiques, les actus des séries de courses et les innovations du labo.</p><form class="flex flex-col sm:flex-row gap-space-xs items-stretch"><input class="flex-1 h-12 px-space-md rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Votre e-mail" type="email"/><button class="h-12 px-space-lg rounded-full bg-inverse-surface text-inverse-on-surface hover:bg-primary-container hover:text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider transition-colors duration-150 flex items-center justify-center" type="button">ENVOYER</button></form></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2026 Shoeasy, Inc. Tous droits réservés.</p><div class="flex items-center gap-space-md font-label-technical text-label-technical uppercase text-outline"><span>ALTIMETRY RIG // 45.9237° N, 6.8694° E</span><span>SHOEASY LAB V4.2</span></div></div></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/cart.js"></script>
+</body></html>
